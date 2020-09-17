@@ -1,12 +1,17 @@
 <aside id="sidebar-wrapper">
-  <div class="sidebar-brand">
+  <!-- <div class="sidebar-brand">
     <a href="{{ route('admin.dashboard') }}">Office 365</a>
-  </div>
-  <div class="sidebar-brand sidebar-brand-sm">
+  </div> -->
+  <!-- <div class="sidebar-brand sidebar-brand-sm">
     <a href="index.html">St</a>
-  </div>
+  </div> -->
   <ul class="sidebar-menu">
-      <li class="menu-header">Dashboard</li>
+      <!-- <li class="menu-header">Dashboard</li> -->
+
+  <ul class="navbar-nav mr-3">
+    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars" style="margin-left: -3px;"></i></a></li>
+    <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+  </ul>
       <li class="{{ Request::route()->getName() == 'admin.dashboard' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fa fa-columns"></i> <span>Dashboard</span></a></li>
       <li class="{{ Request::route()->getName() == 'admin.speak_up' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.speak_up') }}"><i class="fa fa-podcast"></i> <span>Speak Up</span></a></li>
       <li class="{{ Request::route()->getName() == 'admin.test' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.test') }}"><i class="fa fa-book"></i> <span>Knowledge Tests</span></a></li>

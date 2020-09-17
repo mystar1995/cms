@@ -8,6 +8,9 @@
   .form-group{
     margin-bottom: 0px;
   }
+  .alert-primary{
+    display: none;
+  }
   .btn-login{
     margin-top: 15px;
     background-color: #3081e0;

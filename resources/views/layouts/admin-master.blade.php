@@ -10,16 +10,25 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- CSS Libraries -->
-
+<style type="text/css">
+  .left-img{
+    cursor: pointer;
+    margin-top: -22px;
+    margin-right: -10px !important;
+  }
+</style>
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/components.css')}}">
 </head>
-
 <body>
   <div id="app">
     <div class="main-wrapper">
-      <div class="navbar-bg"></div>
+      <div class="navbar-bg">
+        <div class="">
+          <img class="left-img1" src="{{ asset('assets/img/set1.png') }}" style="z-index: 10000">
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg main-navbar">
         @include('admin.partials.topnav')
       </nav>

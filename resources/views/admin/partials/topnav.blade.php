@@ -1,17 +1,19 @@
-<form class="form-inline mr-auto" action="{{ route('admin.users') }}">
-  <ul class="navbar-nav mr-3">
-    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-    <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
-  </ul>
+<form class="form-inline" action="{{ route('admin.users') }}" style="margin: auto;">
   <div class="search-element">
-    <input class="form-control" value="{{ Request::get('query') }}" name="query" type="search" placeholder="Search" aria-label="Search" data-width="250">
-    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+    <input class="form-control" value="{{ Request::get('query') }}" name="query" type="search" placeholder="Search for helpful resources" aria-label="Search" data-width="350" style="min-height: 37px;height: 37px; margin-top: -20px; margin-left: -26px; border-radius: 3px;">
+
+    <button class="btn" type="submit" style="height: 35px; margin-top: -16px; float: left;padding-top: 6px;border-radius: 3px;">
+      <i class="fas fa-search" style="transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1); font-size: 16px; color: #3081e0"></i>
+  </button>
     <div class="search-backdrop"></div>
     {{-- @include('admin.partials.searchhistory') --}}
   </div>
 </form>
 <ul class="navbar-nav navbar-right">
-  <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg{{ Auth::user()->unreadNotifications->count() ? ' beep' : '' }}"><i class="far fa-bell"></i></a>
+  <!-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg{{ Auth::user()->unreadNotifications->count() ? ' beep' : '' }}"><i class="far fa-bell"></i></a>
     <div class="dropdown-menu dropdown-list dropdown-menu-right">
       <div class="dropdown-header">Notifications
         <div class="float-right">
@@ -35,10 +37,15 @@
         <p class="text-muted p-2 text-center">No notifications found!</p>
         @endif
     </div>
-  </li>
-  <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-    <img alt="image" src="{{ Auth::user()->avatarlink }}" class="rounded-circle mr-1">
-    <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div></a>
+  </li> -->
+  <li><img alt="image" src="{{ asset('assets/img/set.png') }}" class="rounded-circle mr-1 left-img"></li>
+  <li><img alt="image" src="{{ asset('assets/img/question.png') }}" class="rounded-circle mr-1 left-img"></li>
+  <li class="dropdown"><!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> -->
+    <!-- <img alt="image" src="{{ Auth::user()->avatarlink }}" class="rounded-circle mr-1"> -->
+
+    <a href="#" data-toggle="dropdown" class="nav-link" >
+    <img alt="image" src="{{ asset('assets/img/db.png') }}" class="rounded-circle mr-1 left-img">
+    <!-- <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div> --></a>
     <div class="dropdown-menu dropdown-menu-right">
       <div class="dropdown-title">Welcome, {{ Auth::user()->name }}</div>
       <a href="{{ Auth::user()->profilelink }}" class="dropdown-item has-icon">
