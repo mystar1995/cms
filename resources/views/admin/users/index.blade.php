@@ -10,7 +10,7 @@ Manage Users
     <h1 class="ms-Label">Manage Users</h1>
   </div>
   <div class="section-body">
-      <users-component></users-component>
+     <!--  <users-component></users-component> -->
   </div>
 </section>
 @endsection
