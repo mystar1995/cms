@@ -7,7 +7,7 @@ Knowledge Tests
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Knowledge Tests</h1>
+    <h1 class="ms-Label">Knowledge Tests</h1>
   </div>
 
   <div class="section-body">

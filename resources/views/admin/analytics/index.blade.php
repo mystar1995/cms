@@ -7,7 +7,7 @@ Analytics
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Analytics</h1>
+    <h1 class="ms-Label">Analytics</h1>
   </div>
 
   <div class="section-body">

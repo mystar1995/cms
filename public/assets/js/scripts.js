@@ -189,14 +189,14 @@ $(function() {
       w = $(window);
 
     if(w.outerWidth() <= 1024) {
-      body.removeClass('search-show search-gone');
-      if(body.hasClass('sidebar-gone')) {
-        body.removeClass('sidebar-gone');
-        body.addClass('sidebar-show');
-      }else{
-        body.addClass('sidebar-gone');
-        body.removeClass('sidebar-show');
-      }
+      // body.removeClass('search-show search-gone');
+      // if(body.hasClass('sidebar-gone')) {
+      //   body.removeClass('sidebar-gone');
+      //   body.addClass('sidebar-show');
+      // }else{
+      //   body.addClass('sidebar-gone');
+      //   body.removeClass('sidebar-show');
+      // }
 
       update_sidebar_nicescroll();
     }else{
@@ -231,17 +231,17 @@ $(function() {
         sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
       }
 
-      $("body").addClass("sidebar-gone");
-      $("body").removeClass("layout-2 layout-3 sidebar-mini sidebar-show");
-      $("body").off('click touchend').on('click touchend', function(e) {
-        if($(e.target).hasClass('sidebar-show') || $(e.target).hasClass('search-show')) {
-          $("body").removeClass("sidebar-show");
-          $("body").addClass("sidebar-gone");
-          $("body").removeClass("search-show");
+      // $("body").addClass("sidebar-gone");
+      // $("body").removeClass("layout-2 layout-3 sidebar-mini sidebar-show");
+      // $("body").off('click touchend').on('click touchend', function(e) {
+      //   if($(e.target).hasClass('sidebar-show') || $(e.target).hasClass('search-show')) {
+      //     $("body").removeClass("sidebar-show");
+      //     $("body").addClass("sidebar-gone");
+      //     $("body").removeClass("search-show");
 
-          update_sidebar_nicescroll();
-        }
-      });
+      //     update_sidebar_nicescroll();
+      //   }
+      // });
 
       update_sidebar_nicescroll();
 

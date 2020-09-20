@@ -1,4 +1,4 @@
-<form class="form-inline" action="{{ route('admin.users') }}" style="margin: auto;">
+<!-- <form class="form-inline" action="{{ route('admin.users') }}" style="margin: auto;">
   <div class="search-element">
     <input class="form-control" value="{{ Request::get('query') }}" name="query" type="search" placeholder="Search for helpful resources" aria-label="Search" data-width="350" style="min-height: 37px;height: 37px; margin-top: -20px; margin-left: -26px; border-radius: 3px;">
 
@@ -11,8 +11,8 @@
     <div class="search-backdrop"></div>
     {{-- @include('admin.partials.searchhistory') --}}
   </div>
-</form>
-<ul class="navbar-nav navbar-right">
+</form> -->
+<div class="navbar-nav navbar-right" style="margin-left: auto; margin-right: -20px;">
   <!-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg{{ Auth::user()->unreadNotifications->count() ? ' beep' : '' }}"><i class="far fa-bell"></i></a>
     <div class="dropdown-menu dropdown-list dropdown-menu-right">
       <div class="dropdown-header">Notifications
@@ -38,23 +38,36 @@
         @endif
     </div>
   </li> -->
-  <li><img alt="image" src="{{ asset('assets/img/set.png') }}" class="rounded-circle mr-1 left-img"></li>
-  <li><img alt="image" src="{{ asset('assets/img/question.png') }}" class="rounded-circle mr-1 left-img"></li>
-  <li class="dropdown"><!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> -->
+  <div><button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-xl ms-Icon--Settings" style="color: white;"></i></button></div>
+  <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-xl ms-Icon--Help" style="color: white;"></i></button>
+  <div class="dropdown" style="width: 100%;"><!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> -->
     <!-- <img alt="image" src="{{ Auth::user()->avatarlink }}" class="rounded-circle mr-1"> -->
-
-    <a href="#" data-toggle="dropdown" class="nav-link" >
-    <img alt="image" src="{{ asset('assets/img/db.png') }}" class="rounded-circle mr-1 left-img">
-    <!-- <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div> --></a>
-    <div class="dropdown-menu dropdown-menu-right">
-      <div class="dropdown-title">Welcome, {{ Auth::user()->name }}</div>
-      <a href="{{ Auth::user()->profilelink }}" class="dropdown-item has-icon">
-        <i class="far fa-user"></i> Profile Settings
+    <div class="ms-PanelExample">
+      <a href="#" class="ms-Button ms-Button--indigo">
+        <div class="ms-Persona-imageArea" style="max-width: 35px;height: 35px;position: unset;margin-top: 2px;">
+        <div class="ms-Persona-initials ms-Persona-initials--purple" style="line-height: 35px;background-color: #0078d4;">ML</div>
+      </div> 
       </a>
-      <div class="dropdown-divider"></div>
-      <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger">
-        <i class="fas fa-sign-out-alt"></i> Logout
-      </a>
+      <div class="ms-Panel">
+        <button class="ms-Panel-closeButton ms-PanelAction-close">
+          <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel"></i>
+        </button>
+        <div class="ms-Panel-contentInner">
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-title">Welcome, {{ Auth::user()->name }}</div>
+            <a href="{{ Auth::user()->profilelink }}" class="dropdown-item has-icon">
+              <i class="far fa-user"></i> Profile Settings
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </li>
-</ul>
+    <!-- <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div> --></a>
+    
+  </div>
+</div>
+

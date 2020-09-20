@@ -7,7 +7,7 @@ Courses
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Courses</h1>
+    <h1 class="ms-Label">Courses</h1>
   </div>
 
   <div class="section-body">

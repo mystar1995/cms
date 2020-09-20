@@ -7,7 +7,7 @@ Setting
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Setting</h1>
+    <h1 class="ms-Label">Setting</h1>
   </div>
 
   <div class="section-body">

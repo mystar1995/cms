@@ -7,7 +7,7 @@ Notification sidebar
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1>Notification sidebar</h1>
+    <h1 class="ms-Label">Notification sidebar</h1>
   </div>
 
   <div class="section-body">
