@@ -6,7 +6,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h4>Add a New User</h4>
+                <h4 class="ms-Label">Add a New User</h4>
             </div>
             <div class="card-body">
                 <div class="form-group row mb-4">

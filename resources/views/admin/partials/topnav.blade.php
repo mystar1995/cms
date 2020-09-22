@@ -38,8 +38,40 @@
         @endif
     </div>
   </li> -->
-  <div><button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-xl ms-Icon--Settings" style="color: white;"></i></button></div>
-  <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-xl ms-Icon--Help" style="color: white;"></i></button>
+  <div>
+    <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 180px; font-size: 10px;position: absolute;">Active Profile : </span>
+    <span class="ms-Label" style="color: #ffffffe0; width: 180px; font-size: 20px;font-weight: 200;padding-top:13px;">Yet Another Co <i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute;margin: 4px;"></i> </span>
+
+  </div>
+  <div class="ms-setting">
+    <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Settings" style="color: white;padding-top: 3px;"></i></button>
+    <div class="ms-Panel">
+      <button class="ms-Panel-closeButton ms-PanelAction-close">
+        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+      </button>
+      <div class="ms-Panel-contentInner">
+        <p class="ms-Panel-headerText">Settings</p>
+        <div class="ms-Panel-content">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="ms-help">
+    <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Help" style="color: white;padding-top: 2px;"></i></button>
+    <div class="ms-Panel">
+      <button class="ms-Panel-closeButton ms-PanelAction-close">
+        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+      </button>
+      <div class="ms-Panel-contentInner">
+        <p class="ms-Panel-headerText">Help</p>
+        <div class="ms-Panel-content">
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="dropdown" style="width: 100%;"><!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> -->
     <!-- <img alt="image" src="{{ Auth::user()->avatarlink }}" class="rounded-circle mr-1"> -->
     <!-- <div class="ms-PanelExample">
@@ -68,8 +100,8 @@
     </div> -->
     <div class="ms-PanelExample">
       <button class="ms-Button" style="background-color: #5c2d91; border: 1px solid #5c2d91">
-        <div class="ms-Persona-imageArea" style="max-width: 35px;height: 35px;position: unset;margin-top: 2px;">
-          <div class="ms-Persona-initials ms-Persona-initials--purple" style="line-height: 35px;background-color: #0078d4;">ML</div>
+        <div class="ms-Persona-imageArea" style="max-width: 32px;height: 32px;position: unset;margin-top: 3px;margin-left: 3px;">
+          <div class="ms-Persona-initials ms-Persona-initials--purple" style="line-height: 32px;background-color: #0078d4;font-size: 16px;font-weight: 300 !important;">ML</div>
         </div>
       </button>
       <div class="ms-Panel">
@@ -79,7 +111,7 @@
         <div class="ms-Panel-contentInner">
           <p class="ms-Panel-headerText">{{ Auth::user()->name }}</p>
           <div class="ms-Panel-content">
-            <a href="#" class="dropdown-item has-icon">
+            <a href="{{ Auth::user()->profilelink }}" class="dropdown-item has-icon">
               <i class="far fa-user"></i> Profile Settings
             </a>
             <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger">

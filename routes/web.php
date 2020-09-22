@@ -17,6 +17,11 @@ Route::name('admin.')->prefix('admin')->middleware('auth')->group(function() {
     Route::get('notification', 'NotificationController')->name('notification');
     Route::get('analytics', 'AnalyticsController')->name('analytics');
     Route::get('setting', 'SettingController')->name('setting');
+    Route::get('languages', 'LanguagesController')->name('languages');
+    Route::get('databases', 'DatabasesController')->name('databases');
+    Route::get('framworks', 'FrameworksController')->name('framworks');
+    Route::get('componets', 'ComponentsController')->name('componets');
+    Route::get('discover', 'DiscoverController')->name('discover');
 
     Route::get('users/roles', 'UserController@roles')->name('users.roles');
     Route::resource('users', 'UserController', [
