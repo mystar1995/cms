@@ -19,7 +19,7 @@
       <li class="{{ Request::route()->getName() == 'admin.courses' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.courses') }}"><i class="ms-Icon ms-font-lg ms-Icon--Boards"></i><span class="ms-Label" style="font-size:14px">Courses</span></a></li>
       <li class="{{ Request::route()->getName() == 'admin.test' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.test') }}"><i class="ms-Icon ms-font-lg ms-Icon--AddEvent"></i> <span class="ms-Label" style="font-size:14px">Knowledge Tests</span></a></li>
       <li class="{{ Request::route()->getName() == 'admin.note_side' ? ' active' : '' }}"><a class="nav-link" href="{{ route('admin.note_side') }}"><i class="ms-Icon ms-font-lg ms-Icon--FabricOpenFolderHorizontal"></i><span class="ms-Label" style="font-size:14px">Knowledgebase</span></a></li>
-      <li><button class="collapsible"><i class="ms-Icon ms-font-lg ms-Icon--DelveAnalyticsLogo" style="margin-left: 5px;color: #848b90"></i><span class="ms-Label" style="font-size: 14px;display: unset;padding-left:22px;">Directories</span></button>
+      <li><button class="collapsible"><i class="ms-Icon ms-font-lg ms-Icon--DelveAnalyticsLogo" style="margin-left: 15px;color: #848b90"></i><span class="ms-Label" style="font-size: 14px;display: unset;padding-left:22px;">Directories</span></button>
       <div class="content" style="padding: unset; max-height: 300px;">
         <a  class="{{ Request::route()->getName() == 'admin.languages' ? ' active' : '' }}" href="{{ route('admin.languages') }}" style="display: block; height: auto;">
             <span>Languages</span>
