@@ -78,7 +78,7 @@ li button:focus{
 .content a {
   padding-top: 7px !important;
   padding-bottom: 7px !important;
-  padding-left: 62px !important;
+  padding-left: 52px !important;
 }
 .content .active {
   background-color: #e0ccff;
