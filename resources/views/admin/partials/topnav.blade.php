@@ -62,12 +62,36 @@
     <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Help" style="color: white;padding-top: 2px;"></i></button>
     <div class="ms-Panel">
       <button class="ms-Panel-closeButton ms-PanelAction-close">
-        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 3px;"></i>
       </button>
-      <div class="ms-Panel-contentInner">
-        <p class="ms-Panel-headerText">Help</p>
-        <div class="ms-Panel-content">
+      <div class="ms-Panel-contentInner helpful" style="margin-top: 70px;padding:0 20px 20px">
+        <div style="display: flex;">
+          <i class="ms-Panel-closeIcon ms-Icon ms-Icon--ChromeBack" style="padding-top: 8px; cursor: pointer; color: #a7a7a7"></i>
+          <a class="" href="{{ route('admin.dashboard') }}"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Home" style="padding-top: 4px;padding-left: 5px; padding-right: 10px; cursor: pointer; color: #a7a7a7"></i></a>
           
+          <div class="ms-SearchBox" style="width: 100%;">
+            <input class="ms-SearchBox-field" type="text" value="" style="width: 100%">
+            <label class="ms-SearchBox-label">
+              <i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i>
+              <span class="ms-SearchBox-text">Search help</span> 
+            </label>
+            <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel">
+              <button class="ms-CommandButton-button">
+                <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Clear"></i></span> 
+                <span class="ms-CommandButton-label"></span> 
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="padding: 15px; padding-top: 20px;margin-top: 10px;">
+          <h4 class="ms-Label" style="font-size: 14px; font-weight: bold;">Sign your messages with style</h4>
+          <p class="ms-Label" style="font-size: 14px">Lorem ipsum is so ubiquitous because it is so versatile. Select how many paragraphs you want, copy, paste, and break the lines wherever it is convenient. Real copy doesn't work that way.</p>
+          <label class="ms-Label" style="font-size: 14px; color: #0078d4; cursor: pointer;">Learn more</label>
+        </div>
+        <div class="card" style="padding: 15px; padding-top: 20px;margin-top: -10px;">
+          <h4 class="ms-Label" style="font-size: 14px; font-weight: bold;">Let them know you're away</h4>
+          <p class="ms-Label" style="font-size: 14px">Lorem ipsum is so ubiquitous because it is so versatile. Select how many paragraphs you want, copy, paste, and break the lines wherever it is convenient. Real copy doesn't work that way.</p>
+          <label class="ms-Label" style="font-size: 14px; color: #0078d4; cursor: pointer;">Learn more</label>
         </div>
       </div>
     </div>

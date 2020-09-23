@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 
   <!-- CSS Libraries -->
 <style type="text/css">
@@ -54,7 +55,7 @@
 .collapsible:after {
   content: "\02C7";
   font-size: 35px;
-  padding-top: 15px;
+  padding-top: 13px;
   margin-bottom: -20px;
   float: right;
   margin-left: 5px;
@@ -143,6 +144,19 @@ li button:focus{
   padding-right: 10px;
   padding-left: 10px;
 }
+.ms-Dropdown-title{
+  border:unset !important;
+  background-color: unset;
+}
+.ms-Dropdown-select *{
+  font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+.helpful .ms-Icon--ChromeBack:before{
+  font-size: 17px;
+}
+.helpful .ms-Icon--Home:before{
+  font-size: 20px;
+}
 </style>
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -181,6 +195,8 @@ li button:focus{
   <script src="{{ asset('assets/js/stisla.js') }}"></script>
   <script src="{{ asset('assets/js/scripts.js') }}"></script>  
   <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
   @yield('scripts')
 </body>
 </html>
@@ -233,5 +249,23 @@ li button:focus{
       } 
     });
   }
+  /////////////////////search///////////////////////////////////
+   var SearchBoxElements = document.querySelectorAll(".ms-SearchBox");
+  for (var i = 0; i < SearchBoxElements.length; i++) {
+    new fabric['SearchBox'](SearchBoxElements[i]);
+  }
+  /////////////////////scroll//////////////////////////////////
   /////////////////////select box///////////////////////////
+    var DropdownHTMLElements = document.querySelectorAll('.ms-Dropdown');
+    for (var i = 0; i < DropdownHTMLElements.length; ++i) {
+      var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
+    }
+  $("#example").dataTable();
+  $('.collapsible-menu').click(function(){
+    $('.main-sidebar').attr('style','width:45px; overflow:hidden');
+    $('.content-sub').attr('style', 'padding: unset;max-height: 300px;display:none');
+    $('.main-sidebar .sidebar-menu li a').attr('style','padding:0 15px');
+    $('.main-content').attr('style','padding-left:45px');
+    $('.navbar-top').attr('style','left:45px;margin-top: 50px;height: 44px;background-color: rgb(243, 242, 241);right: 5px;position: absolute;');
+  })
 </script>

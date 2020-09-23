@@ -332,7 +332,7 @@
 table.dataTable {
   border-collapse: collapse !important; }
   table.dataTable thead th, table.dataTable thead td {
-    border-bottom: 1px solid #ddd !important; }
+    border-bottom: 2px solid #b7b7b7 !important; }
   table.dataTable.no-footer {
     border-bottom: 1px solid #ddd !important; }
 

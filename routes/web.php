@@ -22,6 +22,10 @@ Route::name('admin.')->prefix('admin')->middleware('auth')->group(function() {
     Route::get('framworks', 'FrameworksController')->name('framworks');
     Route::get('componets', 'ComponentsController')->name('componets');
     Route::get('discover', 'DiscoverController')->name('discover');
+    Route::get('code', 'CodeController')->name('code');
+    Route::get('dev', 'DevController')->name('dev');
+    Route::get('qa', 'QaController')->name('qa');
+    Route::get('design', 'DesignController')->name('design');
 
     Route::get('users/roles', 'UserController@roles')->name('users.roles');
     Route::resource('users', 'UserController', [
