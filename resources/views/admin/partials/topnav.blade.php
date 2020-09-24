@@ -38,10 +38,34 @@
         @endif
     </div>
   </li> -->
-  <div>
-    <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 180px; font-size: 10px;position: absolute;">Active Profile : </span>
-    <span class="ms-Label" style="color: #ffffffe0; width: 180px; font-size: 20px;font-weight: 200;padding-top:13px;">Yet Another Co <i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute;margin: 4px;"></i> </span>
-
+  <div class="ms-env">
+    <i class="ms-Icon ms-Icon--AddOnlineMeeting" style="margin-top: 12px;margin-left: -31px; float: left; color: white;"></i>
+    <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 180px; font-size: 11px;position: absolute;">Environments </span>
+    <span class="ms-Label" style="color: #ffffffe0; width: 180px; font-size: 17px;font-weight: 200;padding-top:13px;">Pty Limited... <button class="ms-Button" style="background: #5c2d91;border: #5c2d91;"><i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute;margin: 4px;cursor: pointer;margin: -11px -9px 4px;"></i></i>
+    </button> </span>
+    <div class="ms-Panel" style="margin-top: 5px;">
+      <button class="ms-Panel-closeButton ms-PanelAction-close">
+        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+      </button>
+      <div class="ms-Panel-contentInner" style="margin-top: -6px;padding:0 20px 20px">
+        <p class="ms-Panel-headerText">Environments</p>
+        <div class="ms-Panel-content">
+          <div class="ms-SearchBox" style="width: 100%; margin-top: 10px;">
+            <input class="ms-SearchBox-field" type="text" value="" style="width: 100%">
+            <label class="ms-SearchBox-label">
+              <i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i>
+              <span class="ms-SearchBox-text">Search</span> 
+            </label>
+            <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel">
+              <button class="ms-CommandButton-button">
+                <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Clear"></i></span> 
+                <span class="ms-CommandButton-label"></span> 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="ms-setting">
     <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Settings" style="color: white;padding-top: 3px;"></i></button>

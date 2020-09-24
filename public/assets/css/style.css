@@ -2573,11 +2573,16 @@ body.sidebar-mini .main-sidebar {
       padding: 0; }
 
 body.sidebar-mini .navbar {
-  left: 65px; }
+  left: 66px; }
 
 body.sidebar-mini .main-content, body.sidebar-mini .main-footer {
-  padding-left: 90px; }
-
+  padding-left: 66px; }
+body.sidebar-mini .navbar-top{
+  left: 65px !important;
+}
+body.sidebar-mini .content-sub{
+  padding: unset;max-height: 300px;display:none !important;
+}
 body.layout-2 .navbar-bg {
   z-index: 889;
   height: 70px; }

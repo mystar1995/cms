@@ -165,12 +165,12 @@ li button:focus{
 <body>
   <div id="app">
     <div class="main-wrapper">
-      <div class="navbar-bg">
+      <div class="navbar-bg" style="position: fixed;z-index: 1100">
         <div class="">
           <label class="ms-Label" style="color: white; font-size: 19px;margin:6px 4px 4px 15px; margin-left: 15px;">License2Code</label>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg main-navbar" style="margin-top: -10px;">
+      <nav class="navbar navbar-expand-lg main-navbar" style="margin-top: -10px; position: fixed;z-index: 1200">
         @include('admin.partials.topnav')
       </nav>
       <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
@@ -195,7 +195,7 @@ li button:focus{
   <script src="{{ asset('assets/js/stisla.js') }}"></script>
   <script src="{{ asset('assets/js/scripts.js') }}"></script>  
   <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
-  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script> -->
     <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
   @yield('scripts')
 </body>
@@ -203,13 +203,24 @@ li button:focus{
 
 
 <script type="text/javascript">
+  /////////////////////Panel///////////////////
   var PanelExamples = document.getElementsByClassName("ms-PanelExample");
   for (var i = 0; i < PanelExamples.length; i++) {
     (function() {
       var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
       var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
       PanelExampleButton.addEventListener("click", function(i) {
-        new fabric['Panel'](PanelExamplePanel);
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+        }
+        
       });
     }());
   }
@@ -219,7 +230,37 @@ li button:focus{
       var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
       var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
       PanelExampleButton.addEventListener("click", function(i) {
-        new fabric['Panel'](PanelExamplePanel);
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+        }
+        
+      });
+    }());
+  }
+  var PanelExamples = document.getElementsByClassName("ms-env");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+        }
+        
       });
     }());
   }
@@ -229,10 +270,31 @@ li button:focus{
       var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
       var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
       PanelExampleButton.addEventListener("click", function(i) {
-        new fabric['Panel'](PanelExamplePanel);
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+        }
+        
       });
     }());
   }
+
+  // var PanelExamples = document.getElementsByClassName("ms-option");
+  // for (var i = 0; i < PanelExamples.length; i++) {
+  //   (function() {
+  //     var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+  //     var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+  //     PanelExampleButton.addEventListener("click", function(i) {
+  //       new fabric['Panel'](PanelExamplePanel);
+  //     });
+  //   }());
+  // }
 
   /////////////////////side bar menu///////////////////
   var coll = document.getElementsByClassName("collapsible");
@@ -261,11 +323,4 @@ li button:focus{
       var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
     }
   $("#example").dataTable();
-  $('.collapsible-menu').click(function(){
-    $('.main-sidebar').attr('style','width:45px; overflow:hidden');
-    $('.content-sub').attr('style', 'padding: unset;max-height: 300px;display:none');
-    $('.main-sidebar .sidebar-menu li a').attr('style','padding:0 15px');
-    $('.main-content').attr('style','padding-left:45px');
-    $('.navbar-top').attr('style','left:45px;margin-top: 50px;height: 44px;background-color: rgb(243, 242, 241);right: 5px;position: absolute;');
-  })
 </script>
