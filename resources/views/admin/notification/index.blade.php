@@ -1,13 +1,13 @@
 @extends('layouts.admin-master')
 
 @section('title')
-Notification
+Activities
 @endsection
 
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1 class="ms-Label">Notification</h1>
+    <h1 class="ms-Label">Reports</h1>
   </div>
 
   <div class="section-body">

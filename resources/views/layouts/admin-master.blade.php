@@ -167,7 +167,7 @@ li button:focus{
     <div class="main-wrapper">
       <div class="navbar-bg" style="position: fixed;z-index: 1100">
         <div class="">
-          <label class="ms-Label" style="color: white; font-size: 19px;margin:6px 4px 4px 15px; margin-left: 15px;">License2Code</label>
+          <label class="ms-Label" style="color: white; font-size: 19px;margin:6px 4px 4px 15px; margin-left: 15px;">WatchMyCrew</label>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg main-navbar" style="margin-top: -10px; position: fixed;z-index: 1200">

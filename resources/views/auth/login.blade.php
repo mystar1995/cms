@@ -43,43 +43,50 @@
     color:#c5c5c5;
     margin-bottom: 80px;
   }
+  .social_btn:hover{
+  }
+  .micro{
+    margin-top: 20px; font-size: 14px !important;margin-bottom: 10px;background-color: #309af4; border-color: #309af4;
+  }
+  .micro:hover{background-color: #1a74c1 !important;}
+  .git{
+    margin-top: 0px; font-size: 14px !important;margin-bottom: 10px;background-color: #333333;border-color: #333333;
+  }
+  .git:hover{background-color: #191919 !important;}
+  .google{
+    margin-top: 0px; font-size: 14px !important;margin-bottom: 10px; 
+  }
+  .google:hover{ background-color: #fff !important; border: solid 1px #000 !important; }
+  .atl{
+    margin-top: 0px; font-size: 14px !important;margin-bottom: 10px;background-color: #57af3d;border-color: #57af3d;
+  }
+  .atl:hover{background-color: #489a2f !important; }
+  .btn-outline-primary{
+    color: white !important;
+    font-family:Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    transition:color .05s ease-in-out,background-color .05s ease-in-out,border-color .05s ease-in-out,box-shadow .05s ease-in-out;
+  }
 </style>
 <div class="card card-primary">
   <div class="card-header"><h3 style="margin: auto;padding-top: 80px; color: #3e3e3e">WatchMyCrew</h3></div>
 
-  <div class="card-body">
-    <form method="POST" action="admin/dashboard">
+  <div class="card-body" style="width: 53%;padding: 20px 0px;">
+    <form  action="admin.dashboard">
         @csrf
       <div class="form-group">
         <label class="for-email" for="email"> Enter your login details: </label>
-        <input aria-describedby="emailHelpBlock" id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="My username" tabindex="1" value="{{ old('email') }}" autofocus>
-        <div class="invalid-feedback">
-          {{ $errors->first('email') }}
-        </div>
-        @if(App::environment('demo'))
-        <small id="emailHelpBlock" class="form-text text-muted">
-            Demo Email: admin@example.com
-        </small>
-        @endif
+        <input aria-describedby="emailHelpBlock" id="email" type="email" class="form-control" name="email" placeholder="My username" tabindex="1" value="" autofocus>
       </div>
 
       <div class="form-group">
         <div class="d-block">
           <div class="float-right">
-            <a href="{{ route('password.request') }}" class="text-small">
+            <a href="#" class="text-small">
               Forgot Password?
             </a>
           </div>
         </div>
-        <input aria-describedby="passwordHelpBlock" id="password" type="password" placeholder="Password" class="form-control{{ $errors->has('password') ? ' is-invalid': '' }}" name="password" tabindex="2">
-        <div class="invalid-feedback">
-          {{ $errors->first('password') }}
-        </div>
-        @if(App::environment('demo'))
-        <small id="passwordHelpBlock" class="form-text text-muted">
-            Demo Password: 1234
-        </small>
-        @endif
+        <input aria-describedby="passwordHelpBlock" id="password" type="password" placeholder="Password" class="form-control" name="password" tabindex="2">
       </div>
 
       <!-- <div class="form-group">
@@ -101,14 +108,17 @@
           <span class="lineor" style="margin-left: 5px; padding-right: 5px;"> or </span>
           <div class="line2"></div>
         </div>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block" tabindex="4" style="margin-top: 20px; color: black !important;font-size: 14px !important;margin-bottom: 10px;">
+        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn micro" tabindex="4" style="">
           <img src="{{ asset('assets/img/small-logo.png') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Microsoft
         </a>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block" tabindex="4" style="margin-top: 0px; color: black !important;font-size: 14px !important;margin-bottom: 10px;">
-          <img src="{{ asset('assets/img/github.png') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in GitHub
+        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn git" tabindex="4" style="">
+          <img src="{{ asset('assets/img/git.webp') }}" style="width: 25px;margin-right: 2px;margin-bottom: 0px;"> Sign in with GitHub
         </a>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block" tabindex="4" style="margin-top: 0px; color: black !important;font-size: 14px !important;margin-bottom: 10px;">
-          <img src="{{ asset('assets/img/th.jpg') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in Google or Atlassian
+        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn atl" tabindex="4" style="">
+          <img src="{{ asset('assets/img/at.png') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Atlassian
+        </a>
+        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn google" tabindex="4" style="color: black !important;">
+          <img src="{{ asset('assets/img/th.jpg') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Google
         </a>
       </div>
     </form>

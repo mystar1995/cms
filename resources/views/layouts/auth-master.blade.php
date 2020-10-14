@@ -21,7 +21,7 @@
   }
   #app .card{
     border-radius: 0px;
-    margin-top: 15vh;
+    margin-top: 12vh;
     border-top:none;
     width: 140%;
     margin-left: -20%;

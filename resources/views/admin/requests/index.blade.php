@@ -7,45 +7,9 @@ Requests
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1 class="ms-Label">Requests</h1>
+    <h1 class="ms-Label">Worktime</h1>
   </div>
   <div class="section-body">
-  	<table id="example">
-	    <thead>
-	      <tr>
-	      	<th style="width: 15%">Subject</th>
-	      	<th style="width: 15%">Requested By</th>
-	      	<th style="width: 25%">Description</th>
-	      	<th style="width: 15%">Type</th>
-	      	<th style="width: 12%">Date</th>
-	      	<th style="width: 18%">Tags</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	      	<td style="padding: 0px !important">
-	      		
-	      		<div class="ms-Dropdown" tabindex="0" style="margin-bottom: 0px;padding: 3px 10px !important;">
-	      			<div style="position: absolute;bottom: 0;margin-bottom: -8px;right:0px;margin-right: -13px;">
-					  <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--More" style="font-weight: 900; padding: 11px;background-color: #e0dfdf"></i>
-					</div>
-				  	<select class="ms-Dropdown-select">
-					    <option>Introduction..</option>
-					    <option>Menu Item-1</option>
-					    <option>Menu Item-2</option>
-					    <option>Menu Item-3</option>
-					    <option>Menu Item-4</option>
-				  	</select>
-				</div>
-			</td>
-	      	<td></td>
-	      	<td></td>
-	      	<td></td>
-	      	<td></td>
-	      	<td></td>
-	      </tr>
-	    </tbody>
-	</table>
   </div>
 </section>
 @endsection
@@ -70,6 +34,9 @@ Requests
 	}
 	table.dataTable tr.odd td.sorting_1{
 		background-color: #eae9e8 !important;
+	}
+	table.dataTable tr.even td.sorting_1{
+		background-color: #f3f2f2 !important;
 	}
 	th, td{
 		-webkit-font-smoothing: antialiased;

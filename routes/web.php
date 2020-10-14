@@ -7,15 +7,15 @@ Route::get('home', function() {
     return redirect(route('admin.dashboard'));
 });
 
-Route::name('admin.')->prefix('admin')->middleware('auth')->group(function() {
-    Route::get('dashboard', 'DashboardController')->name('dashboard');
-    Route::get('speak_up', 'SpeakController')->name('speak_up');
-    Route::get('test', 'TestController')->name('test');
-    Route::get('courses', 'CoursesController')->name('courses');
-    Route::get('note_side', 'NotesideController')->name('note_side');
-    Route::get('request', 'RequestController')->name('request');
-    Route::get('notification', 'NotificationController')->name('notification');
-    Route::get('analytics', 'AnalyticsController')->name('analytics');
+Route::name('admin.')->group(function() {
+    Route::get('admin.dashboard', 'DashboardController')->name('dashboard');
+    Route::get('admin.views', 'SpeakController')->name('views');
+    Route::get('admin.crew', 'TestController')->name('crew');
+    Route::get('admin.alert', 'CoursesController')->name('alert');
+    Route::get('admin.activite', 'NotesideController')->name('activite');
+    Route::get('admin.worktime', 'RequestController')->name('worktime');
+    Route::get('admin.reports', 'NotificationController')->name('reports');
+    Route::get('admin.analytics', 'AnalyticsController')->name('analytics');
     Route::get('setting', 'SettingController')->name('setting');
     Route::get('languages', 'LanguagesController')->name('languages');
     Route::get('databases', 'DatabasesController')->name('databases');

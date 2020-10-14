@@ -7,7 +7,7 @@ Speak Up
 @section('content')
 <section class="section">
   <div class="section-header">
-    <h1 class="ms-Label">Speak Up</h1>
+    <h1 class="ms-Label">Views</h1>
   </div>
 
   <div class="section-body">
