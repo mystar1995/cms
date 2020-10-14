@@ -80,8 +80,5 @@ Requests
 	table.dataTable td{
 		padding: 10px 10px !important;
 	}
-</style>															
-<script type="text/javascript">
-
-</script>
+</style>	
 
