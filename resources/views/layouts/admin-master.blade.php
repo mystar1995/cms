@@ -112,6 +112,17 @@ li button:focus{
   font-size: 15px;
   padding-top: 2px;
 }
+.me .ms-Icon:before{
+  font-size: 10px !important;
+  padding-top: 4px;
+  margin-left: -3px;
+}
+.me span{
+  color: #797777 !important;
+}
+.me .ms-Dropdown-items{
+  overflow-y: visible !important;
+}
 .role-sel, .update-sel{
   background-color: unset !important;
   border-radius: 0px !important;
@@ -173,7 +184,7 @@ li button:focus{
       <nav class="navbar navbar-expand-lg main-navbar" style="margin-top: -10px; position: fixed;z-index: 1200">
         @include('admin.partials.topnav')
       </nav>
-      <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
+      <!-- <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div> -->
       <div class="main-sidebar">
         @include('admin.partials.sidebar')
       </div>
