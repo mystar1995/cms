@@ -66,60 +66,6 @@ Views
 			            <div class="ms-Persona-presence">
 			            </div>
 			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Russel Miller</div>
-			              <div class="ms-Persona-secondaryText">Sales</div>
-			            </div>
-			          </div>
-			        </button>
-			      </li>
-			    </ul>
-			  </div>
-			</div>
-			</div>
-			<img src="{{ asset('assets/img/11.jpg') }}" style="width: 100%;">
-		</div>
-		<div class="col-md-6">
-			<div class="" style="display: flex;">
-			<div class="ms-OrgChart" style="margin-left: 40%;">
-			  <div class="ms-OrgChart-group">
-			    <ul class="ms-OrgChart-list">
-			      <li class="ms-OrgChart-listItem">
-			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
-			          <div class="ms-Persona">
-			            <div class="ms-Persona-imageArea">
-			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
-			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
-			            </div>
-			            <div class="ms-Persona-presence">
-			            </div>
-			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Grant Steel</div>
-			              <div class="ms-Persona-secondaryText">Sales</div>
-			            </div>
-			          </div>
-			        </button>
-			      </li>
-			    </ul>
-			  </div>
-			</div>
-			</div>
-			<img src="{{ asset('assets/img/22.jpg') }}" style="width: 100%; height: 86%">
-		</div>
-		<div class="col-md-6">
-			<div class="" style="display: flex;">
-			<div class="ms-OrgChart" style="margin-left: 40%;">
-			  <div class="ms-OrgChart-group">
-			    <ul class="ms-OrgChart-list">
-			      <li class="ms-OrgChart-listItem">
-			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
-			          <div class="ms-Persona">
-			            <div class="ms-Persona-imageArea">
-			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
-			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
-			            </div>
-			            <div class="ms-Persona-presence">
-			            </div>
-			            <div class="ms-Persona-details">
 			              <div class="ms-Persona-primaryText">Harvey Wallin</div>
 			              <div class="ms-Persona-secondaryText">Sales</div>
 			            </div>
@@ -158,6 +104,61 @@ Views
 			</div>
 			</div>
 			<img src="{{ asset('assets/img/44.jpg') }}" style="width: 100%;">
+		</div>
+
+		<div class="col-md-6">
+			<div class="" style="display: flex;">
+			<div class="ms-OrgChart" style="margin-left: 40%;">
+			  <div class="ms-OrgChart-group">
+			    <ul class="ms-OrgChart-list">
+			      <li class="ms-OrgChart-listItem">
+			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
+			          <div class="ms-Persona">
+			            <div class="ms-Persona-imageArea">
+			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
+			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
+			            </div>
+			            <div class="ms-Persona-presence">
+			            </div>
+			            <div class="ms-Persona-details">
+			              <div class="ms-Persona-primaryText">Russel Miller</div>
+			              <div class="ms-Persona-secondaryText">Sales</div>
+			            </div>
+			          </div>
+			        </button>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+			</div>
+			<img src="{{ asset('assets/img/11.jpg') }}" style="width: 100%;">
+		</div>
+		<div class="col-md-6">
+			<div class="" style="display: flex;">
+			<div class="ms-OrgChart" style="margin-left: 40%;">
+			  <div class="ms-OrgChart-group">
+			    <ul class="ms-OrgChart-list">
+			      <li class="ms-OrgChart-listItem">
+			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
+			          <div class="ms-Persona">
+			            <div class="ms-Persona-imageArea">
+			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
+			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
+			            </div>
+			            <div class="ms-Persona-presence">
+			            </div>
+			            <div class="ms-Persona-details">
+			              <div class="ms-Persona-primaryText">Grant Steel</div>
+			              <div class="ms-Persona-secondaryText">Sales</div>
+			            </div>
+			          </div>
+			        </button>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+			</div>
+			<img src="{{ asset('assets/img/22.jpg') }}" style="width: 100%; height: 85%">
 		</div>
 	</div>				
   </div>
