@@ -88,7 +88,7 @@ li button:focus{
   box-shadow: -38px 0 6px -41px rgb(0 0 0);
 }
 .ms-Panel-closeButton .ms-Icon--Cancel{
-  margin-top: 54px;
+  margin-top: 73px;
 }
 .ms-Panel{
   padding-top: 40px;

@@ -108,8 +108,8 @@
           <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel"></i>
         </button>
         <div class="ms-Panel-contentInner">
-          <p class="ms-Panel-headerText"></p>
-          <div class="ms-Panel-content">
+          <p class="ms-Panel-headerText" style="margin-top: 0px;font-weight: bolder;">My account</p>
+          <div class="ms-Panel-content" style="margin-top: 20px;">
             <div class="ms-Persona ms-Persona--xl">
               <div class="ms-Persona-imageArea">
                 <div class="ms-Persona-initials ms-Persona-initials--blue">ML</div>
