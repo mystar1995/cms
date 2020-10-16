@@ -6,12 +6,12 @@
   <title>@yield('title', 'Stisla Laravel') &mdash; {{ env('APP_NAME') }}</title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- General CSS Files -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
   <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
-
+  <link href="https://unpkg.com/@sjaakp/dateline@2.0.3/dist/dateline.css" rel="stylesheet">
   <!-- CSS Libraries -->
 <style type="text/css">
   .left-img{
@@ -117,6 +117,11 @@ li button:focus{
   padding-top: 4px;
   margin-left: -3px;
 }
+.me .ms-Icon--AlignLeft:before{
+  font-size: 14px !important;
+  padding-top: 0px !important;
+  margin-left: -3px;
+}
 .me span{
   color: #797777 !important;
 }
@@ -206,14 +211,31 @@ li button:focus{
   <script src="{{ asset('assets/js/stisla.js') }}"></script>
   <script src="{{ asset('assets/js/scripts.js') }}"></script>  
   <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+  <script src="https://unpkg.com/@sjaakp/dateline@2.0.3/dist/dateline.js"></script>
   <!-- <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script> -->
-    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+  <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
   @yield('scripts')
 </body>
 </html>
 
-
+<script>
+        var q_dl = dateline('dl', {
+        begin: "1900-01-01",
+        end: "2020-10-15",
+        cursor: "2007-02-01",
+        bands:[
+            {size: "60%", scale: Dateline.MONTH, interval: 60},
+            {size: "24%", layout: "overview", scale: Dateline.YEAR, interval: 100},
+            {size: "16%", layout: "overview", scale: Dateline.DECADE, interval: 40, multiple: 2}
+        ],
+        events:[
+            {id: 2, start: "2008-01-01", text: "YII project started", description: "...", class: "..."},
+            /* ... many more events ... */
+        ]
+    })
+</script>
 <script type="text/javascript">
+    $("#example").dataTable();
   /////////////////////Panel///////////////////
   var PanelExamples = document.getElementsByClassName("ms-PanelExample");
   for (var i = 0; i < PanelExamples.length; i++) {
@@ -333,5 +355,14 @@ li button:focus{
     for (var i = 0; i < DropdownHTMLElements.length; ++i) {
       var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
     }
-  $("#example").dataTable();
+    //table
+    var TableElements = document.querySelectorAll(".ms-Table");
+    for (var i = 0; i < TableElements.length; i++) {
+      new fabric['Table'](TableElements[i]);
+    }
+    ///date picker
+    var DatePickerElements = document.querySelectorAll(".ms-DatePicker");
+    for (var i = 0; i < DatePickerElements.length; i++) {
+      new fabric['DatePicker'](DatePickerElements[i]);
+    }
 </script>

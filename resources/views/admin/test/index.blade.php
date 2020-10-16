@@ -1,6 +1,7 @@
 @extends('layouts.admin-master')
 
 @section('title')
+Crew Members
 @endsection
 <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
 @section('content')
@@ -10,7 +11,7 @@
     <h1 class="ms-Label">Crew Members</h1>
   </div>
   <div class="section-body ms-setting">
-  	<table id="example">
+  	<table class="ms-Table">
 	    <thead>
 	      <tr>
 	      	<th style="width: 25%">Name</th>
@@ -20,7 +21,7 @@
 	      </tr>
 	    </thead>
 	    <tbody class="ms-Button">
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle1</td>
 	      	<td class="tstatus">Google Chrome.app4</td>
 	      	<td class="tloc">Graz Ten3</td>
@@ -32,7 +33,7 @@
 	      	<td class="tloc">Graz Ten5</td>
 	      	<td></td>
 	      </tr>
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle4</td>
 	      	<td class="tstatus">Google Chrome.app2</td>
 	      	<td class="tloc">Graz Ten4</td>
@@ -44,7 +45,7 @@
 	      	<td class="tloc">Graz Ten2</td>
 	      	<td></td>
 	      </tr>
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle1</td>
 	      	<td class="tstatus">Google Chrome.app4</td>
 	      	<td class="tloc">Graz Ten3</td>
@@ -56,7 +57,7 @@
 	      	<td class="tloc">Graz Ten5</td>
 	      	<td></td>
 	      </tr>
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle4</td>
 	      	<td class="tstatus">Google Chrome.app2</td>
 	      	<td class="tloc">Graz Ten4</td>
@@ -68,7 +69,7 @@
 	      	<td class="tloc">Graz Ten2</td>
 	      	<td></td>
 	      </tr>
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle1</td>
 	      	<td class="tstatus">Google Chrome.app4</td>
 	      	<td class="tloc">Graz Ten3</td>
@@ -80,7 +81,7 @@
 	      	<td class="tloc">Graz Ten5</td>
 	      	<td></td>
 	      </tr>
-	      <tr>
+	      <tr class="odd">
 	      	<td class="tname">idle4</td>
 	      	<td class="tstatus">Google Chrome.app2</td>
 	      	<td class="tloc">Graz Ten4</td>
@@ -157,5 +158,11 @@
 		padding: unset !important;
 		border: 0px solid #000 !important;
 		display: table-footer-group !important;
+	}
+	.ms-Table-head, .ms-Table thead th{
+		font-size: 14px !important;
+	}
+	.odd{
+		background-color: #f7f7f7;
 	}
 </style>

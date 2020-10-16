@@ -110,12 +110,21 @@
         <div class="ms-Panel-contentInner">
           <p class="ms-Panel-headerText"></p>
           <div class="ms-Panel-content">
-            <a href="#" class="dropdown-item has-icon">
-              <i class="far fa-user"></i> Profile Settings
-            </a>
-            <a href="#" class="dropdown-item has-icon text-danger">
-              <i class="fas fa-sign-out-alt"></i> Logout
-            </a>
+            <div class="ms-Persona ms-Persona--xl">
+              <div class="ms-Persona-imageArea">
+                <div class="ms-Persona-initials ms-Persona-initials--blue">ML</div>
+              </div>
+              <div class="ms-Persona-presence">
+                <i class="ms-Persona-presenceIcon ms-Icon ms-Icon--SkypeCheck"></i>
+              </div>
+              <div class="ms-Persona-details">
+                <div class="ms-Persona-primaryText" style="font-size: 17px; font-weight: bolder;">Mlton Lafferty</div>
+                <div class="ms-Persona-optionalText" style="font-weight: bolder;">Mlton@outlook.com</div>
+                <div class="ms-Persona-secondaryText"><a href="#" style="color: #0065b2; font-weight: bolder;"> My office profile</a></div>
+                <div class="ms-Persona-tertiaryText"><a href="#" style="color: #0065b2; font-weight: bolder;">My account</a></div>
+                <div class="ms-Persona-optionalText"><a href="#" style="color: #0065b2; font-weight: bolder;">Sign out</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

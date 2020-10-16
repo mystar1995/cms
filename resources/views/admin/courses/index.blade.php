@@ -1,6 +1,7 @@
 @extends('layouts.admin-master')
 
 @section('title')
+Alerts
 @endsection
 <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
 @section('content')
@@ -10,7 +11,7 @@
     <h1 class="ms-Label">Alerts</h1>
   </div>
   <div class="section-body">
-  	<table id="example">
+  	<!-- <table id="example">
 	    <thead>
 	      <tr>
 	      	<th style="width: 15%">Date time</th>
@@ -106,6 +107,83 @@
 	      	<td></td>
 	      </tr>
 	    </tbody>
+	</table> -->
+	<table class="ms-Table">
+	  	<thead>
+		    <tr>
+		      	<th>Date time</th>
+		      	<th>Trigger</th>
+		      	<th>Detail</th>
+		      	<th>Coders</th>
+		      	<th>Actions</th>
+		    </tr>
+	  	</thead>
+	  <tbody>
+	    <tr class="odd">
+	      	
+	      	<td>4 years ago</td>
+	      	<td>idle5</td>
+	      	<td>Google Chrome.app1</td>
+	      	<td>Graz Ten2</td>
+	      	<td></td>
+	    </tr>
+	    <tr>
+	      
+	      	<td>3 years ago</td>
+	      	<td>idle4</td>
+	      	<td>Google Chrome.app2</td>
+	      	<td>Graz Ten4</td>
+	      	<td></td>
+	    </tr>
+	    <tr class="odd">
+	      
+	      	<td>2 years ago</td>
+	      	<td>idle3</td>
+	      	<td>Google Chrome.app3</td>
+	      	<td>Graz Ten5</td>
+	      	<td></td>
+	    </tr>
+	    <tr>
+	      
+	      	<td>1 years ago</td>
+	      	<td>idle1</td>
+	      	<td>Google Chrome.app4</td>
+	      	<td>Graz Ten3</td>
+	      	<td></td>
+	    </tr>
+	    <tr class="odd">
+	      	
+	      	<td>4 years ago</td>
+	      	<td>idle5</td>
+	      	<td>Google Chrome.app1</td>
+	      	<td>Graz Ten2</td>
+	      	<td></td>
+	    </tr>
+	    <tr>
+	      
+	      	<td>3 years ago</td>
+	      	<td>idle4</td>
+	      	<td>Google Chrome.app2</td>
+	      	<td>Graz Ten4</td>
+	      	<td></td>
+	    </tr>
+	    <tr class="odd">
+	      
+	      	<td>2 years ago</td>
+	      	<td>idle3</td>
+	      	<td>Google Chrome.app3</td>
+	      	<td>Graz Ten5</td>
+	      	<td></td>
+	    </tr>
+	    <tr>
+	      
+	      	<td>1 years ago</td>
+	      	<td>idle1</td>
+	      	<td>Google Chrome.app4</td>
+	      	<td>Graz Ten3</td>
+	      	<td></td>
+	    </tr>
+	  </tbody>
 	</table>
   </div>
 </section>
@@ -143,5 +221,11 @@
 	}
 	table.dataTable td{
 		padding: 10px 10px !important;
+	}
+	.ms-Table-head, .ms-Table thead th{
+		font-size: 14px !important;
+	}
+	.odd{
+		background-color: #f7f7f7;
 	}
 </style>

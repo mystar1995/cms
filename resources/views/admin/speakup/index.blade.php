@@ -7,31 +7,16 @@ Views
 	<div class="top-area">
 		<div class="" style="padding: 13px; padding-left: 30px;">
 			<div class="row">
-				<div class="col-md-10" style="cursor: pointer;">
+				<div class="col-md-12" style="cursor: pointer;">
 					<div class="event" style="display: flex;">
 						<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">New solution</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--Import" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Import</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--Lock" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Open AppSource</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--WebPublish" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Publish all customizations</span>
+						<span style="cursor: pointer;padding-left:5px;">New</span>
+						<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888; padding-left: 20px;"></i>
+						<span style="cursor: pointer;padding-left:5px;">Delete</span>
 						<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Switch to classic</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--History" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">See history</span>
+						<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
 
 					</div>
-				</div>
-				<div class="col-md-2" style="cursor: pointer;">
-					<div class="event" style="display: flex;">
-						<i class="ms-Icon ms-font-sm ms-Icon--AlignLeft" style="color: #894888; font-size: 13px;"></i>
-						
-						<i class="ms-Icon ms-font-sm ms-Icon--Search" style="color: #5a81e8; padding-left: 70px; font-weight: bolder;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Search</span>
-
-					</div>				
 				</div>
 			</div>
 		</div>
@@ -40,9 +25,12 @@ Views
 @section('content')
 <section class="section">
   <div class="section-header">
-	<div class="ms-Dropdown me col-md-10" tabindex="0" style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -36px;margin-right: 130px;color: #333;">
-	  <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
-	  <select class="ms-Dropdown-select">
+  	<div style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -31px;margin-right: 18px;color: #333; ">
+	  <i class="ms-Icon ms-font-sm ms-Icon--AlignLeft" style="color: #894888; font-size: 13px;"></i>
+	</div>
+	<div class="ms-Dropdown me col-md-10" tabindex="0" style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -36px;margin-right: 10px;color: #333; ">
+		<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+	  <select class="ms-Dropdown-select" style="margin-top: -10px;">
 	    <option>
 			1x1
 	    </option>
@@ -50,6 +38,13 @@ Views
 	    <option> 4x4 </option>
 	  </select>
 	</div>	
+	<div style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -6px;margin-right: 218px;color: #333; ">
+		<div class="ms-DatePicker" style="margin-top: -30px;width: 70px;">
+		  <div class="ms-TextField">
+		    <input class="ms-TextField-field" type="date">
+		  </div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -61,12 +56,12 @@ Views
 			          <div class="ms-Persona">
 			            <div class="ms-Persona-imageArea">
 			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
-			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
+			              <img class="ms-Persona-image" src="{{ asset('assets/img/2.png') }}">
 			            </div>
 			            <div class="ms-Persona-presence">
 			            </div>
 			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Harvey Wallin</div>
+			              <div class="ms-Persona-primaryText">Graz</div>
 			              <div class="ms-Persona-secondaryText">Sales</div>
 			            </div>
 			          </div>
@@ -76,7 +71,61 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/33.jpg') }}" style="width: 100%;">
+			<img src="{{ asset('assets/img/11.png') }}" style="width: 100%;">
+		</div>
+		<div class="col-md-6">
+			<div class="" style="display: flex;">
+				<div class="ms-OrgChart" style="margin-left: 40%;">
+				  <div class="ms-OrgChart-group">
+				    <ul class="ms-OrgChart-list">
+				      <li class="ms-OrgChart-listItem">
+				        <button class="ms-OrgChart-listItemBtn" tabindex="1">
+				          <div class="ms-Persona">
+				            <div class="ms-Persona-imageArea">
+				              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
+				              <img class="ms-Persona-image" src="{{ asset('assets/img/1.png') }}">
+				            </div>
+				            <div class="ms-Persona-presence">
+				            </div>
+				            <div class="ms-Persona-details">
+				              <div class="ms-Persona-primaryText">Darv</div>
+				              <div class="ms-Persona-secondaryText">Sales</div>
+				            </div>
+				          </div>
+				        </button>
+				      </li>
+				    </ul>
+				  </div>
+				</div>
+			</div>
+			<img src="{{ asset('assets/img/22.png') }}" style="width: 100%;">
+		</div>
+		<div class="col-md-6">
+			<div class="" style="display: flex;">
+			<div class="ms-OrgChart" style="margin-left: 40%;">
+			  <div class="ms-OrgChart-group">
+			    <ul class="ms-OrgChart-list">
+			      <li class="ms-OrgChart-listItem">
+			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
+			          <div class="ms-Persona">
+			            <div class="ms-Persona-imageArea">
+			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
+			              <img class="ms-Persona-image" src="{{ asset('assets/img/3.png') }}">
+			            </div>
+			            <div class="ms-Persona-presence">
+			            </div>
+			            <div class="ms-Persona-details">
+			              <div class="ms-Persona-primaryText">Vint</div>
+			              <div class="ms-Persona-secondaryText">Sales</div>
+			            </div>
+			          </div>
+			        </button>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+			</div>
+			<img src="{{ asset('assets/img/33.png') }}" style="width: 100%;">
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -93,7 +142,7 @@ Views
 			            <div class="ms-Persona-presence">
 			            </div>
 			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Russel Miller</div>
+			              <div class="ms-Persona-primaryText">lujang</div>
 			              <div class="ms-Persona-secondaryText">Sales</div>
 			            </div>
 			          </div>
@@ -103,68 +152,10 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/44.jpg') }}" style="width: 100%;">
+			<img src="{{ asset('assets/img/44.png') }}" style="width: 100%;">
 		</div>
-
-		<div class="col-md-6">
-			<div class="" style="display: flex;">
-			<div class="ms-OrgChart" style="margin-left: 40%;">
-			  <div class="ms-OrgChart-group">
-			    <ul class="ms-OrgChart-list">
-			      <li class="ms-OrgChart-listItem">
-			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
-			          <div class="ms-Persona">
-			            <div class="ms-Persona-imageArea">
-			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
-			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
-			            </div>
-			            <div class="ms-Persona-presence">
-			            </div>
-			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Russel Miller</div>
-			              <div class="ms-Persona-secondaryText">Sales</div>
-			            </div>
-			          </div>
-			        </button>
-			      </li>
-			    </ul>
-			  </div>
-			</div>
-			</div>
-			<img src="{{ asset('assets/img/11.jpg') }}" style="width: 100%;">
-		</div>
-		<div class="col-md-6">
-			<div class="" style="display: flex;">
-			<div class="ms-OrgChart" style="margin-left: 40%;">
-			  <div class="ms-OrgChart-group">
-			    <ul class="ms-OrgChart-list">
-			      <li class="ms-OrgChart-listItem">
-			        <button class="ms-OrgChart-listItemBtn" tabindex="1">
-			          <div class="ms-Persona">
-			            <div class="ms-Persona-imageArea">
-			              <div class="ms-Persona-initials ms-Persona-initials--blue">RM</div>
-			              <img class="ms-Persona-image" src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/images/persona.person.png">
-			            </div>
-			            <div class="ms-Persona-presence">
-			            </div>
-			            <div class="ms-Persona-details">
-			              <div class="ms-Persona-primaryText">Grant Steel</div>
-			              <div class="ms-Persona-secondaryText">Sales</div>
-			            </div>
-			          </div>
-			        </button>
-			      </li>
-			    </ul>
-			  </div>
-			</div>
-			</div>
-			<img src="{{ asset('assets/img/22.jpg') }}" style="width: 100%; height: 85%">
-		</div>
-	</div>				
-  </div>
-
-  <div class="section-body">
-  	
+	</div>
   </div>
 </section>
+    <div id="dl"></div>
 @endsection
