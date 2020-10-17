@@ -3,19 +3,24 @@
 @section('title')
 Views
 @endsection
-<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;">
+<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 1;">
 	<div class="top-area">
-		<div class="" style="padding: 13px; padding-left: 30px;">
+		<div class="" style="padding: 9px; padding-left: 30px;">
 			<div class="row">
 				<div class="col-md-12" style="cursor: pointer;">
 					<div class="event" style="display: flex;">
-						<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">New</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Delete</span>
-						<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888; padding-left: 20px;"></i>
-						<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
-
+						<div class="top_btn">
+							<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
+							<span style="cursor: pointer;padding-left:5px;">New</span>
+						</div>
+						<div class="top_btn" style="margin-left: 20px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
+							<span style="cursor: pointer;padding-left:5px;">Delete</span>
+						</div>
+						<div class="top_btn" style="margin-left: 20px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
+							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -28,7 +33,7 @@ Views
   	<div style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -31px;margin-right: 18px;color: #333; ">
 	  <i class="ms-Icon ms-font-sm ms-Icon--AlignLeft" style="color: #894888; font-size: 13px;"></i>
 	</div>
-	<div class="ms-Dropdown me col-md-10" tabindex="0" style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -36px;margin-right: 10px;color: #333; ">
+	<div class="ms-Dropdown me col-md-10" tabindex="0" style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -36px;margin-right: 10px;color: #333;">
 		<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
 	  <select class="ms-Dropdown-select" style="margin-top: -10px;">
 	    <option>

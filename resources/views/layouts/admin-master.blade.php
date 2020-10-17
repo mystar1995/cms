@@ -173,6 +173,32 @@ li button:focus{
 .helpful .ms-Icon--Home:before{
   font-size: 20px;
 }
+.top_btn:hover{
+  background-color: #e2e0dd !important;
+  cursor: pointer;
+}
+.top_btn{
+  display: flex;
+  padding-top: 2px; padding-bottom: 3px; padding-right: 7px;padding-left: 7px;
+
+}
+@media(max-width: 1025px){
+  .main-sidebar{
+    top: 7px !important;
+    width:35px !important;
+  }
+  .navbar-top{
+    left: 30px !important;
+  }
+}
+@media(max-width: 700px){
+  .top_btn{
+    display: none;
+  }
+  .ms-env{
+    display: none;
+  }
+}
 </style>
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">

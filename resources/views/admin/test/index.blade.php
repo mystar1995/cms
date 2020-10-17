@@ -152,12 +152,15 @@ Crew Members
 	}
 	.ms-Button{
 		background-color: unset !important;
+		color: #6c757d !important;
+		display: table-footer-group !important;/*
 		height: unset !important;
 		min-width:unset !important;
-		color: #6c757d !important;
-		padding: unset !important;
 		border: 0px solid #000 !important;
-		display: table-footer-group !important;
+		padding: unset !important;*/
+	}
+	.ms-Icon--ChevronDown{
+		color: white;
 	}
 	.ms-Table-head, .ms-Table thead th{
 		font-size: 14px !important;
