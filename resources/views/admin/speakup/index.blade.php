@@ -162,5 +162,5 @@ Views
 	</div>
   </div>
 </section>
-    <div id="dl"></div>
+    <div id="dl" style="height: 140px !important;"></div>
 @endsection

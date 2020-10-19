@@ -117,6 +117,11 @@ li button:focus{
   padding-top: 4px;
   margin-left: -3px;
 }
+.me .ms-Icon--GlobalNavButton:before{
+  font-size: 15px !important;
+  color: white;
+
+}
 .me .ms-Icon--AlignLeft:before{
   font-size: 14px !important;
   padding-top: 0px !important;
@@ -125,9 +130,16 @@ li button:focus{
 .me span{
   color: #797777 !important;
 }
+.me1 span{
+  color: white !important;
+}
+.me1{
+  margin-bottom:5px;
+}
 .me .ms-Dropdown-items{
   overflow-y: visible !important;
 }
+
 .role-sel, .update-sel{
   background-color: unset !important;
   border-radius: 0px !important;
@@ -181,6 +193,12 @@ li button:focus{
   display: flex;
   padding-top: 2px; padding-bottom: 3px; padding-right: 7px;padding-left: 7px;
 
+}
+#dl{
+  height: 120px !important;
+}
+.d-band-1{
+  margin-bottom: -21px !important;
 }
 @media(max-width: 1025px){
   .main-sidebar{
@@ -246,16 +264,15 @@ li button:focus{
 
 <script>
         var q_dl = dateline('dl', {
-        begin: "1900-01-01",
-        end: "2020-10-15",
-        cursor: "2007-02-01",
+        begin: "2020-01-01",
+        end: "2020-01-02",
+        cursor: "2020-01-01",
         bands:[
-            {size: "60%", scale: Dateline.MONTH, interval: 60},
-            {size: "24%", layout: "overview", scale: Dateline.YEAR, interval: 100},
-            {size: "16%", layout: "overview", scale: Dateline.DECADE, interval: 40, multiple: 2}
+            {size: "50%", scale: Dateline.MINUTE, interval: 28},
+            {size: "24%", layout: "overview", scale: Dateline.HOUR, interval: 70}
         ],
         events:[
-            {id: 2, start: "2008-01-01", text: "YII project started", description: "...", class: "..."},
+           // {id: 2, start: "2020-01-01", text: "YII project started", description: "...", class: "..."},
             /* ... many more events ... */
         ]
     })

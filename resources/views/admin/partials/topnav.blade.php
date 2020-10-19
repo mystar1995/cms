@@ -43,6 +43,33 @@
       </div>
     </div>
   </div>
+  <div class="ms-envss" style="border-left: 1px solid #ababab;border-right: 1px solid #ababab;padding-left: 4px;padding-right: 4px;padding-left:17px">
+    <i class="ms-Icon ms-Icon--GlobalNavButton" style="margin-top: 12px; float: left; color: white;"></i>
+
+    <i class="ms-Icon ms-Icon--Clock" style="margin-top: 12px;margin-left: 31px; float: left; color: white;margin-right:13px;"></i>
+    <div class="line" style="border-right: 0.5px solid #ababab; width: 1px; height: 100%; margin-left: 30px;"></div>
+    <span class="ms-Label" style="color: #ffffffe0; width: 220px; font-size: 17px;font-weight: 200;padding:4px;margin-top:-50px;"></span>
+    <div class="ms-Dropdown me me1" tabindex="0" style="">
+      <select class="ms-Dropdown-select" style="margin-top: -10px; color: white;">
+        <option> UTC</option>
+        <option> Local Time </option>
+        <option> American/New_York </option>
+      </select>
+    </div>  
+  </div>
+  <!-- <div>
+    <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--GlobalNavButton" style="color: white"></i>
+    <div class="ms-Dropdown me me1" tabindex="0" style="">
+      <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--GlobalNavButton" style="color: white"></i>
+      <select class="ms-Dropdown-select" style="margin-top: -10px; color: white;">
+        <option>
+        1x1
+        </option>
+        <option> 2x2 </option>
+        <option> 4x4 </option>
+      </select>
+    </div>  
+  </div> -->
   <div class="ms-setting">
     <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Settings" style="color: white;padding-top: 3px;"></i></button>
     <div class="ms-Panel">
@@ -119,8 +146,8 @@
               </div>
               <div class="ms-Persona-details">
                 <div class="ms-Persona-primaryText" style="font-size: 17px; font-weight: bolder;">Mlton Lafferty</div>
-                <div class="ms-Persona-optionalText" style="font-weight: bolder;">Mlton@outlook.com</div>
-                <div class="ms-Persona-secondaryText"><a href="#" style="color: #0065b2; font-weight: bolder;"> My office profile</a></div>
+                <div class="ms-Persona-optionalText" style="font-weight: bolder;">milton@yac.com</div>
+                <div class="ms-Persona-secondaryText"><a href="#" style="color: #0065b2; font-weight: bolder;"> My profile</a></div>
                 <div class="ms-Persona-tertiaryText"><a href="#" style="color: #0065b2; font-weight: bolder;">My account</a></div>
                 <div class="ms-Persona-optionalText"><a href="#" style="color: #0065b2; font-weight: bolder;">Sign out</a></div>
               </div>
