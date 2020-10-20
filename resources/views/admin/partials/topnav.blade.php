@@ -17,7 +17,7 @@
   <div class="ms-env">
     <i class="ms-Icon ms-Icon--AddOnlineMeeting" style="margin-top: 12px;margin-left: -31px; float: left; color: white;"></i>
     <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 180px; font-size: 11px;position: absolute;">Environments </span>
-    <span class="ms-Label" style="color: #ffffffe0; width: 180px; font-size: 17px;font-weight: 200;padding-top:13px;">Pty Limited... <button class="ms-Button" style="background: #5c2d91;border: #5c2d91;"><i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute;margin: 4px;cursor: pointer;margin: -11px -9px 4px;"></i></i>
+    <span class="ms-Label" style="color: #ffffffe0; width: 160px; font-size: 17px;font-weight: 200;padding-top:13px;">Pty Limited... <button class="ms-Button" style="background: #5c2d91;border: #5c2d91;"><i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute;margin: 4px;cursor: pointer;margin: -11px -9px 4px;"></i></i>
     </button> </span>
     <div class="ms-Panel" style="margin-top: 5px;">
       <button class="ms-Panel-closeButton ms-PanelAction-close">
@@ -43,12 +43,11 @@
       </div>
     </div>
   </div>
-  <div class="ms-envss" style="border-left: 1px solid #ababab;border-right: 1px solid #ababab;padding-left: 4px;padding-right: 4px;padding-left:17px">
-    <i class="ms-Icon ms-Icon--GlobalNavButton" style="margin-top: 12px; float: left; color: white;"></i>
+  <div class="ms-envss">
 
-    <i class="ms-Icon ms-Icon--Clock" style="margin-top: 12px;margin-left: 31px; float: left; color: white;margin-right:13px;"></i>
-    <div class="line" style="border-right: 0.5px solid #ababab; width: 1px; height: 100%; margin-left: 30px;"></div>
-    <span class="ms-Label" style="color: #ffffffe0; width: 220px; font-size: 17px;font-weight: 200;padding:4px;margin-top:-50px;"></span>
+    <i class="ms-Icon ms-Icon--Clock" style="margin-top: 14px;margin-left: 31px; float: left; color: white;margin-right:13px;"></i>
+    <div class="line" style="height: 100%; margin-left: 30px;"></div>
+    <span class="ms-Label" style="color: #ffffffe0; width: 220px; font-size: 17px;font-weight: 200;padding:4px;margin-top:-49px;"></span>
     <div class="ms-Dropdown me me1" tabindex="0" style="">
       <select class="ms-Dropdown-select" style="margin-top: -10px; color: white;">
         <option> UTC</option>

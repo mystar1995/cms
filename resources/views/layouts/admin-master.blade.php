@@ -216,6 +216,9 @@ li button:focus{
   .ms-env{
     display: none;
   }
+  .ms-envss{
+    display: none;
+  }
 }
 </style>
   <!-- Template CSS -->
