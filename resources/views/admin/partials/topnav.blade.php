@@ -72,14 +72,58 @@
   <div class="ms-setting">
     <button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Settings" style="color: white;padding-top: 3px;"></i></button>
     <div class="ms-Panel">
+      <p class="ms-Panel-headerText" style="font-weight: bolder;margin-left: 18px;">Settings</p>
       <button class="ms-Panel-closeButton ms-PanelAction-close">
         <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
       </button>
-      <div class="ms-Panel-contentInner">
-        <p class="ms-Panel-headerText">Settings</p>
+      <div class="ms-Panel-contentInner" style="padding: 0 18px 20px;">
+        <p class="ms-Panel-headerText" style="font-weight: bolder;font-size: 17px;margin-top: unset;">Themes</p>
         <div class="ms-Panel-content">
-          
-        </div>
+          <div class="set_area" style="height: 115px; overflow-y: hidden;">
+              <img class="1" value="1" src="{{ asset('assets/img/theme/1.png') }}">
+              <img class="2" src="{{ asset('assets/img/theme/2.png') }}">
+              <img class="default" src="{{ asset('assets/img/theme/default.png') }}">
+              <img class="3" src="{{ asset('assets/img/theme/3.png') }}">
+              <img class="4" src="{{ asset('assets/img/theme/4.png') }}">
+              <img class="5" src="{{ asset('assets/img/theme/5.png') }}">
+              <img class="6" src="{{ asset('assets/img/theme/6.png') }}">
+              <img class="7" src="{{ asset('assets/img/theme/7.png') }}">
+              <img class="8" src="{{ asset('assets/img/theme/8.png') }}">
+              <img class="9" src="{{ asset('assets/img/theme/9.png') }}">
+              <img class="10" src="{{ asset('assets/img/theme/10.png') }}">
+              <img class="11" src="{{ asset('assets/img/theme/11.png') }}">
+              <img class="22" src="{{ asset('assets/img/theme/22.png') }}">
+              <img class="33" src="{{ asset('assets/img/theme/33.png') }}">
+              <img class="44" src="{{ asset('assets/img/theme/44.png') }}">
+              <img class="55" src="{{ asset('assets/img/theme/55.png') }}">
+              <img class="66" src="{{ asset('assets/img/theme/66.png') }}">
+              <img class="1" src="{{ asset('assets/img/theme/77.png') }}">
+              <img class="2" src="{{ asset('assets/img/theme/88.png') }}">
+              <img class="3" src="{{ asset('assets/img/theme/99.png') }}">
+              <img class="4" src="{{ asset('assets/img/theme/00.png') }}">
+              <img class="5" src="{{ asset('assets/img/theme/111.png') }}">
+              <img class="6" src="{{ asset('assets/img/theme/222.png') }}">
+              <img class="7" src="{{ asset('assets/img/theme/333.png') }}">
+              <img class="8" src="{{ asset('assets/img/theme/444.png') }}">
+              <img class="9" src="{{ asset('assets/img/theme/555.png') }}">
+              <img class="10" src="{{ asset('assets/img/theme/666.png') }}">
+              <img class="11" src="{{ asset('assets/img/theme/777.png') }}">
+              <img class="22" src="{{ asset('assets/img/theme/888.png') }}">
+              <img class="44" src="{{ asset('assets/img/theme/000.png') }}">
+              <img class="55" src="{{ asset('assets/img/theme/1111.png') }}">
+              <img class="66" src="{{ asset('assets/img/theme/2222.png') }}">
+              <img class="1" src="{{ asset('assets/img/theme/3333.png') }}">
+              <img class="2" src="{{ asset('assets/img/theme/4444.png') }}">
+              <img class="3" src="{{ asset('assets/img/theme/5555.png') }}">
+              <img class="4" src="{{ asset('assets/img/theme/6666.png') }}">
+              <img class="5" src="{{ asset('assets/img/theme/7777.png') }}">
+              <img class="6" src="{{ asset('assets/img/theme/8888.png') }}">
+              <img class="7" src="{{ asset('assets/img/theme/9999.png') }}">
+              <img class="8" src="{{ asset('assets/img/theme/0000.png') }}">
+          </div>
+        </div><br>
+        <span class="ms-Panel-headerText hideset" style="font-size: 17px; cursor: pointer; display: none; margin: unset;">Hide all</span>
+        <span class="ms-Panel-headerText view" style="font-size: 17px; cursor: pointer; margin: unset;">view all</span>
       </div>
     </div>
   </div>
@@ -148,7 +192,7 @@
                 <div class="ms-Persona-optionalText" style="font-weight: bolder;">milton@yac.com</div>
                 <div class="ms-Persona-secondaryText"><a href="#" style="color: #0065b2; font-weight: bolder;"> My profile</a></div>
                 <div class="ms-Persona-tertiaryText"><a href="#" style="color: #0065b2; font-weight: bolder;">My account</a></div>
-                <div class="ms-Persona-optionalText"><a href="#" style="color: #0065b2; font-weight: bolder;">Sign out</a></div>
+                <div class="ms-Persona-optionalText"><a href="{{ route('logout') }}" style="color: #0065b2; font-weight: bolder;">Sign out</a></div>
               </div>
             </div>
           </div>

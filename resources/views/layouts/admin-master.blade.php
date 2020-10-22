@@ -200,6 +200,20 @@ li button:focus{
 .d-band-1{
   margin-bottom: -21px !important;
 }
+ .set_area img{
+    width: 54px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+
+ }
+ .set_area {
+   display: flex; width: 100%;flex-wrap:wrap;
+ }
+ .ms-Button, .ms-PanelExample{
+  background-color: unset !important;
+  border: none !important;
+ }
 @media(max-width: 1025px){
   .main-sidebar{
     top: 7px !important;
@@ -411,4 +425,76 @@ li button:focus{
     for (var i = 0; i < DatePickerElements.length; i++) {
       new fabric['DatePicker'](DatePickerElements[i]);
     }
+
+    ////////////////////////////////////////////////
+
+    $('.set_area img').click(function(){
+      $('img').css('border', 'none');
+      $('img').css('padding','0px');
+      $(this).css('border','2px solid #1b1b1b94');
+      $(this).css('padding','2px');
+      
+    })
+     $('.view').click(function(){
+      $('.set_area').css('height','auto');
+      $(this).css('display','none');
+      $('.hideset').css('display','block');
+    })
+    $('.hideset').click(function(){
+      $(this).css('display','none');
+      $('.view').css('display','block');
+      $('.set_area').css('height','115px');
+    })
+
+    $('.set_area .1').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/55.jpg") }})');
+    })
+    $('.set_area .2').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/44.jpg") }})');
+    })
+    $('.set_area .3').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/1.jpg") }})');
+    })
+    $('.set_area .4').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/4.jpg") }})');
+    })
+    $('.set_area .5').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/5.jpg") }})');
+    })
+    $('.set_area .6').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/6.jpg") }})');
+    })
+    $('.set_area .7').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/7.jpg") }})');
+    })
+    $('.set_area .default').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/default.jpg") }})');
+    })
+    $('.set_area .8').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/8.jpg") }})');
+    })
+    $('.set_area .9').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/9.jpg") }})');
+    })
+    $('.set_area .10').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/10.jpg") }})');
+    })
+    $('.set_area .11').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/11.jpg") }})');
+    })
+    $('.set_area .22').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/22.jpg") }})');
+    })
+    $('.set_area .33').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/33.jpg") }})');
+    })
+    $('.set_area .44').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/44.jpg") }})');
+    })
+    $('.set_area .55').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/55.jpg") }})');
+    })
+    $('.set_area .66').click(function(){
+        $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/66.jpg") }})');
+    })
 </script>

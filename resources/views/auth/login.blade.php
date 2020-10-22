@@ -108,16 +108,16 @@
           <span class="lineor" style="margin-left: 5px; padding-right: 5px;"> or </span>
           <div class="line2"></div>
         </div>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn micro" tabindex="4" style="">
+        <a href="https://login.microsoftonline.com/" class="btn btn-outline-primary btn-lg btn-block social_btn micro" tabindex="4" style="">
           <img src="{{ asset('assets/img/small-logo.png') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Microsoft
         </a>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn git" tabindex="4" style="">
+        <a href="https://github.com/login" class="btn btn-outline-primary btn-lg btn-block social_btn git" tabindex="4" style="">
           <img src="{{ asset('assets/img/git.webp') }}" style="width: 25px;margin-right: 2px;margin-bottom: 0px;"> Sign in with GitHub
         </a>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn atl" tabindex="4" style="">
+        <a href="https://id.atlassian.com/login/" class="btn btn-outline-primary btn-lg btn-block social_btn atl" tabindex="4" style="">
           <img src="{{ asset('assets/img/at.png') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Atlassian
         </a>
-        <a href="#" class="btn btn-outline-primary btn-lg btn-block social_btn google" tabindex="4" style="color: black !important;">
+        <a href="https://accounts.google.com/" class="btn btn-outline-primary btn-lg btn-block social_btn google" tabindex="4" style="color: black !important;">
           <img src="{{ asset('assets/img/th.jpg') }}" style="width: 15px;margin-right: 2px;margin-bottom: 3px;"> Sign in with Google
         </a>
       </div>
