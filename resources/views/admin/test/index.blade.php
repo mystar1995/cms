@@ -3,7 +3,30 @@
 @section('title')
 Crew Members
 @endsection
-<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
+<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 1;">
+	<div class="top-area">
+		<div class="" style="padding: 9px; padding-left: 30px;">
+			<div class="row">
+				<div class="col-md-12" style="cursor: pointer;">
+					<div class="event" style="display: flex;">
+						<div class="top_btn">
+							<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
+							<span style="cursor: pointer;padding-left:5px;">New</span>
+						</div>
+						<div class="top_btn" style="margin-left: 20px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
+							<span style="cursor: pointer;padding-left:5px;">Delete</span>
+						</div>
+						<div class="top_btn" style="margin-left: 20px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
+							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 @section('content')
 
 <section class="section">
@@ -22,76 +45,92 @@ Crew Members
 	    </thead>
 	    <tbody class="ms-Button">
 	      <tr class="odd">
-	      	<td class="tname">idle1</td>
-	      	<td class="tstatus">Google Chrome.app4</td>
-	      	<td class="tloc">Graz Ten3</td>
-	      	<td></td>
+	      	<td class="tname">Graz</td>
+	      	<td class="tstatus">Pending</td>
+	      	<td class="tloc">Singapore</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr>
-	      	<td class="tname">idle3</td>
-	      	<td class="tstatus">Google Chrome.app3</td>
-	      	<td class="tloc">Graz Ten5</td>
-	      	<td></td>
+	      	<td class="tname">Darv</td>
+	      	<td class="tstatus">Active</td>
+	      	<td class="tloc">Russia</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr class="odd">
-	      	<td class="tname">idle4</td>
-	      	<td class="tstatus">Google Chrome.app2</td>
-	      	<td class="tloc">Graz Ten4</td>
-	      	<td></td>
+	      	<td class="tname">Vint</td>
+	      	<td class="tstatus">Inactive</td>
+	      	<td class="tloc">Japan</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr>
-	      	<td class="tname">idle5</td>
-	      	<td class="tstatus">Google Chrome.app1</td>
-	      	<td class="tloc">Graz Ten2</td>
-	      	<td></td>
+	      	<td class="tname">lujang</td>
+	      	<td class="tstatus">Active</td>
+	      	<td class="tloc">Unite State</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr class="odd">
-	      	<td class="tname">idle1</td>
-	      	<td class="tstatus">Google Chrome.app4</td>
-	      	<td class="tloc">Graz Ten3</td>
-	      	<td></td>
+	      	<td class="tname">Graz</td>
+	      	<td class="tstatus">Pending</td>
+	      	<td class="tloc">Singapore</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr>
-	      	<td class="tname">idle3</td>
-	      	<td class="tstatus">Google Chrome.app3</td>
-	      	<td class="tloc">Graz Ten5</td>
-	      	<td></td>
+	      	<td class="tname">Darv</td>
+	      	<td class="tstatus">Active</td>
+	      	<td class="tloc">Russia</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr class="odd">
-	      	<td class="tname">idle4</td>
-	      	<td class="tstatus">Google Chrome.app2</td>
-	      	<td class="tloc">Graz Ten4</td>
-	      	<td></td>
+	      	<td class="tname">Vint</td>
+	      	<td class="tstatus">Inactive</td>
+	      	<td class="tloc">Japan</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	      <tr>
-	      	<td class="tname">idle5</td>
-	      	<td class="tstatus">Google Chrome.app1</td>
-	      	<td class="tloc">Graz Ten2</td>
-	      	<td></td>
-	      </tr>
-	      <tr class="odd">
-	      	<td class="tname">idle1</td>
-	      	<td class="tstatus">Google Chrome.app4</td>
-	      	<td class="tloc">Graz Ten3</td>
-	      	<td></td>
-	      </tr>
-	      <tr>
-	      	<td class="tname">idle3</td>
-	      	<td class="tstatus">Google Chrome.app3</td>
-	      	<td class="tloc">Graz Ten5</td>
-	      	<td></td>
-	      </tr>
-	      <tr class="odd">
-	      	<td class="tname">idle4</td>
-	      	<td class="tstatus">Google Chrome.app2</td>
-	      	<td class="tloc">Graz Ten4</td>
-	      	<td></td>
-	      </tr>
-	      <tr>
-	      	<td class="tname">idle5</td>
-	      	<td class="tstatus">Google Chrome.app1</td>
-	      	<td class="tloc">Graz Ten2</td>
-	      	<td></td>
+	      	<td class="tname">lujang</td>
+	      	<td class="tstatus">Active</td>
+	      	<td class="tloc">Unite State</td>
+	      	<td>
+	      		<div>
+                    <i data-toggle="tooltip" data-placement="top" title="Edit" class="ms-Icon ms-font-sm ms-Icon--Edit" style=""></i>
+                    <i data-toggle="tooltip" data-placement="top" title="Delete" class="ms-Icon ms-font-sm ms-Icon--Delete" style="margin-left: 20px;"></i>
+				</div>
+			</td>
 	      </tr>
 	    </tbody>
 	</table>

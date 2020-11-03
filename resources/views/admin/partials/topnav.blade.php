@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="ms-envss">
+  <!-- <div class="ms-envss">
 
     <i class="ms-Icon ms-Icon--Clock" style="margin-top: 14px;margin-left: 31px; float: left; color: white;margin-right:13px;"></i>
     <div class="line" style="height: 100%; margin-left: 30px;"></div>
@@ -55,6 +55,23 @@
         <option> American/New_York </option>
       </select>
     </div>  
+  </div> -->
+  <div class="ms-clock">
+    <button class="ms-Button ms-Button--indigo" style="display: flex !important;"><i class="ms-Icon ms-font-lg ms-Icon--Clock" style="color: white;padding-top: 3px;display: flex;margin: 4px"></i><span class="mytime" style="margin-top: 10px;margin-right: 20px; color: white">UTC</span></button>
+    <div class="ms-Panel">
+      <p class="ms-Panel-headerText" style="font-weight: bolder;margin-left: 18px;">UTC</p>
+      <button class="ms-Panel-closeButton ms-PanelAction-close">
+        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+      </button>
+      <div class="ms-Panel-contentInner" style="padding: 0 18px 20px;">
+        <p class="ms-Panel-headerText utc" style="font-weight: bolder;font-size: 17px;margin-top: unset; cursor: pointer;">UTC</p>
+        <p class="ms-Panel-headerText local_time" style="font-weight: bolder;font-size: 17px;margin-top: unset; cursor: pointer;">Local Time</p>
+        <p class="ms-Panel-headerText new_y" style="font-weight: bolder;font-size: 17px;margin-top: unset; cursor: pointer;">American/New_York</p>
+        <div class="ms-Panel-content">
+          
+        </div>
+      </div>
+    </div>
   </div>
   <!-- <div>
     <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--GlobalNavButton" style="color: white"></i>
@@ -201,4 +218,3 @@
     </div>
   </div>
 </div>
-

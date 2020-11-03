@@ -17,7 +17,7 @@ Views
 							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
 							<span style="cursor: pointer;padding-left:5px;">Delete</span>
 						</div>
-						<div class="top_btn" style="margin-left: 20px;">
+						<div class="top_btn time_remove" style="margin-left: 20px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
 							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
 						</div>

@@ -378,6 +378,27 @@ li button:focus{
     }());
   }
 
+  var PanelExamples = document.getElementsByClassName("ms-clock");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+        }
+        
+      });
+    }());
+  }
+
   // var PanelExamples = document.getElementsByClassName("ms-option");
   // for (var i = 0; i < PanelExamples.length; i++) {
   //   (function() {
@@ -496,5 +517,14 @@ li button:focus{
     })
     $('.set_area .66').click(function(){
         $('.navbar-bg').css('background-image','url({{ asset("assets/img/theme/top/66.jpg") }})');
+    })
+    $('.utc').click(function(){
+      $('.mytime').html('UTC');
+    })
+    $('.local_time').click(function(){
+      $('.mytime').html('Local&nbsp&nbspTime');
+    })
+    $('.new_y').click(function(){
+      $('.mytime').html('American/New_York');
     })
 </script>
