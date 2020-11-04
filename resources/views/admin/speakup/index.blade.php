@@ -19,7 +19,7 @@ Views
 						</div>
 						<div class="top_btn time_remove" style="margin-left: 20px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
-							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
+							<span style="cursor: pointer;padding-left:5px;">Switch to Recorded</span>
 						</div>
 					</div>
 				</div>
