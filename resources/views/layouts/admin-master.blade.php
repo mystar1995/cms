@@ -239,11 +239,17 @@ li button:focus{
 {
   position: absolute;
   z-index: 1000;
-  top:55px;
-  width: 100vw;
-  height: 100vh;
-  background-size:cover;
-  background-image: url('{{asset('assets/img/loading.png')}}');
+  width: 100%;
+  height: 100%;
+  background-size:40% 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('{{asset('assets/img/loading.gif')}}');
+}
+
+.time_add
+{
+  background-color: #e2e0dd;
 }
 </style>
   <!-- Template CSS -->
@@ -252,7 +258,6 @@ li button:focus{
 </head>
 <body>
   <div id="app">
-    <div class="loading"></div>
     <div class="main-wrapper">
       <div class="navbar-bg" style="position: fixed;z-index: 1100">
         <div class="">
@@ -310,6 +315,25 @@ li button:focus{
   window.onload = function(){
     $('.loading').hide();
   }
+  $(document).ready(function(){
+      $('.time_remove').click(function(){
+      if($(this).hasClass('time_add'))
+      {
+        $('.d-dateline').show();
+        $(this).removeClass('time_add');  
+      }
+      else
+      {
+        
+        $('.d-dateline').hide();
+        $(this).addClass('time_add');
+      }
+    })  
+  })
+  
+
+
+
   $("#example").dataTable();
   /////////////////////Panel///////////////////
   var PanelExamples = document.getElementsByClassName("ms-PanelExample");
@@ -459,7 +483,7 @@ li button:focus{
     ///date picker
     var DatePickerElements = document.querySelectorAll(".ms-DatePicker");
     for (var i = 0; i < DatePickerElements.length; i++) {
-      new fabric['DatePicker'](DatePickerElements[i]);
+      //new fabric['DatePicker'](DatePickerElements[i]);
     }
 
     ////////////////////////////////////////////////

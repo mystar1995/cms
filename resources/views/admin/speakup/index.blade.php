@@ -76,7 +76,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/11.png') }}" style="width: 100%;">
+			<div style="position: absolute;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/11.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -103,7 +107,11 @@ Views
 				  </div>
 				</div>
 			</div>
-			<img src="{{ asset('assets/img/22.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/22.png') }}" style="width: 100%;">	
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -130,7 +138,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/33.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/33.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -157,7 +169,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/44.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/44.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 	</div>
   </div>
