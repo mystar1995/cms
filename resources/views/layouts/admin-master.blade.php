@@ -244,6 +244,7 @@ li button:focus{
   background-size:40% 60%;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: white;  
   background-image: url('{{asset('assets/img/loading.gif')}}');
 }
 
