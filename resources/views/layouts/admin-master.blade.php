@@ -240,7 +240,6 @@ li button:focus{
   position: absolute;
   z-index: 1000;
   top:55px;
-  opacity: 0.5;
   width: 100vw;
   height: 100vh;
   background-size:cover;
