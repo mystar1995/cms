@@ -234,6 +234,18 @@ li button:focus{
     display: none;
   }
 }
+
+.loading
+{
+  position: absolute;
+  z-index: 1000;
+  top:55px;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  background-size:cover;
+  background-image: url('{{asset('assets/img/loading.png')}}');
+}
 </style>
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -241,6 +253,7 @@ li button:focus{
 </head>
 <body>
   <div id="app">
+    <div class="loading"></div>
     <div class="main-wrapper">
       <div class="navbar-bg" style="position: fixed;z-index: 1100">
         <div class="">
@@ -295,7 +308,10 @@ li button:focus{
     })
 </script>
 <script type="text/javascript">
-    $("#example").dataTable();
+  window.onload = function(){
+    $('.loading').hide();
+  }
+  $("#example").dataTable();
   /////////////////////Panel///////////////////
   var PanelExamples = document.getElementsByClassName("ms-PanelExample");
   for (var i = 0; i < PanelExamples.length; i++) {
