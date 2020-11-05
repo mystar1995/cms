@@ -6,23 +6,23 @@ Views
 <div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 1;">
 	<div class="top-area">
 		<div class="" style="padding: 9px; padding-left: 30px;">
-			<div class="row">
-				<div class="col-md-12" style="cursor: pointer;">
+			<div class="row" style="margin-top: -1px;">
+				<div class="col-md-12" style="cursor: pointer; padding-left: 0px !important;">
 					<div class="event" style="display: flex;">
 						<div class="top_btn">
 							<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
 							<span style="cursor: pointer;padding-left:5px;">New</span>
 						</div>
-						<div class="top_btn" style="margin-left: 20px;">
+						<div class="top_btn" style="margin-left: 10px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
 							<span style="cursor: pointer;padding-left:5px;">Delete</span>
 						</div>
-						<div class="top_btn time_remove" style="margin-left: 20px;">
+						<div class="top_btn time_remove" style="margin-left: 10px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
 
 							<span class="recorded" style="cursor: pointer;padding-left:5px;">Switch to Recorded</span>
 						</div>
-						<div class="top_btn time_show" style="margin-left: 20px; display: none;">
+						<div class="top_btn time_show" style="margin-left: 10px; display: none;">
 							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
 							<span class="live" style="cursor: pointer;padding-left:5px;">Switch to Live</span>
 

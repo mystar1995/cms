@@ -15,7 +15,7 @@ Alerts
 						</div>
 					</div> -->
 					<div class="ms-clock">
-					    <button class="ms-Button ms-Button--indigo" style="display: flex !important;"><i class="ms-Icon ms-font-sm ms-Icon--TriggerApproval" style="color: #894888;"></i>
+					    <button class="ms-Button ms-Button--indigo top_btn" style="display: flex !important;height: 29px;margin-top: -2px;padding-top: 2px;"><i class="ms-Icon ms-font-sm ms-Icon--TriggerApproval" style="color: #894888;"></i>
 							<span class="recorded" style="cursor: pointer;padding-left:5px;color: #894888;">Triggers</span></button>
 					    <div class="ms-Panel">
 					      <p class="ms-Panel-headerText" style="font-weight: bolder;margin-left: 18px;">Trigger</p>
@@ -26,7 +26,7 @@ Alerts
 					       
 					      </div>
 					    </div>
-					  </div>
+					 </div>
 				</div>
 			</div>
 		</div>

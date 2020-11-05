@@ -7,19 +7,15 @@ Crew Members
 	<div class="top-area">
 		<div class="" style="padding: 9px; padding-left: 30px;">
 			<div class="row">
-				<div class="col-md-12" style="cursor: pointer;">
+				<div class="col-md-12" style="cursor: pointer;padding-left: 0px;">
 					<div class="event" style="display: flex;">
 						<div class="top_btn">
 							<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
 							<span style="cursor: pointer;padding-left:5px;">New</span>
 						</div>
-						<div class="top_btn" style="margin-left: 20px;">
+						<div class="top_btn" style="margin-left: 10px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
 							<span style="cursor: pointer;padding-left:5px;">Delete</span>
-						</div>
-						<div class="top_btn" style="margin-left: 20px;">
-							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
-							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
 						</div>
 					</div>
 				</div>
