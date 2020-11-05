@@ -19,7 +19,11 @@ Views
 						</div>
 						<div class="top_btn time_remove" style="margin-left: 20px;">
 							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
-							<span style="cursor: pointer;padding-left:5px;">Switch to Live</span>
+							<span class="recorded" style="cursor: pointer;padding-left:5px;">Switch to Recorded</span>
+						</div>
+						<div class="top_btn time_show" style="margin-left: 20px; display: none;">
+							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
+							<span class="live" style="cursor: pointer;padding-left:5px;">Switch to Live</span>
 						</div>
 					</div>
 				</div>
@@ -46,11 +50,11 @@ Views
 	<div style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -6px;margin-right: 218px;color: #333; ">
 		<div class="ms-DatePicker" style="margin-top: -30px;width: 70px;">
 		  <div class="ms-TextField">
-		    <input class="ms-TextField-field" type="date">
+		    <input class="ms-TextField-field" type="date" value="">
 		  </div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row animation" style="display: none;">
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
 			<div class="ms-OrgChart" style="margin-left: 40%;">
@@ -76,7 +80,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/11.png') }}" style="width: 100%;">
+			<div style="position: absolute;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/11.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -103,7 +111,11 @@ Views
 				  </div>
 				</div>
 			</div>
-			<img src="{{ asset('assets/img/22.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/22.png') }}" style="width: 100%;">	
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -130,7 +142,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/33.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/33.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div class="" style="display: flex;">
@@ -157,7 +173,11 @@ Views
 			  </div>
 			</div>
 			</div>
-			<img src="{{ asset('assets/img/44.png') }}" style="width: 100%;">
+			<div style="position: relative;">
+				<div class="loading"></div>
+				<img src="{{ asset('assets/img/44.png') }}" style="width: 100%;">
+			</div>
+			
 		</div>
 	</div>
   </div>

@@ -234,6 +234,24 @@ li button:focus{
     display: none;
   }
 }
+
+.loading
+{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-size:40% 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: white;  
+  background-image: url('{{asset('assets/img/loading.gif')}}');
+}
+
+.time_add
+{
+  background-color: #e2e0dd;
+}
 </style>
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -295,9 +313,42 @@ li button:focus{
     })
 </script>
 <script type="text/javascript">
-    $("#example").dataTable();
+  window.onload = function(){
+    $('.loading').hide();
+  }
+  $(document).ready(function(){
+    // $('.time_remove').click(function(){
+    //   if($(this).hasClass('time_add'))
+    //   {
+    //     $('.d-dateline').show();
+    //     $(this).removeClass('time_add');  
+    //   }
+    //   else
+    //   {
+    //     $('.d-dateline').hide();
+    //     $(this).addClass('time_add');
+    //   }
+    // })  
+    $('.time_remove').click(function(){
+      $(this).css('display','none');
+      $('.time_show').css('display', 'flex');
+      $('.animation').css('display', 'flex');
+      $('.d-dateline').hide();
+    })
+    $('.time_show').click(function(){
+      $(this).css('display','none');
+      $('.time_remove').css('display', 'flex');
+      $('.animation').css('display', 'none');
+      $('.d-dateline').show();
+    })
+  })
+  
+
+
+
+  $("#example").dataTable();
   /////////////////////Panel///////////////////
-  var PanelExamples = document.getElementsByClassName("ms-PanelExample");
+    var PanelExamples = document.getElementsByClassName("ms-PanelExample");
   for (var i = 0; i < PanelExamples.length; i++) {
     (function() {
       var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
@@ -312,6 +363,11 @@ li button:focus{
         {
           new fabric['Panel'](PanelExamplePanel);
           $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
         }
         
       });
@@ -332,6 +388,11 @@ li button:focus{
         {
           new fabric['Panel'](PanelExamplePanel);
           $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
         }
         
       });
@@ -345,13 +406,19 @@ li button:focus{
       PanelExampleButton.addEventListener("click", function(i) {
         if($(this).hasClass('closebtn'))
         {
+          $('.ms-Icon--ChevronDown').attr('style', 'transform:rotate(0deg)');
           $('.ms-PanelAction-close').click();
           $(this).removeClass('closebtn');
         }
         else
         {
+          $('.ms-Icon--ChevronDown').attr('style', 'transform:rotate(-180deg)');
           new fabric['Panel'](PanelExamplePanel);
           $(this).addClass('closebtn');  
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
         }
         
       });
@@ -372,11 +439,22 @@ li button:focus{
         {
           new fabric['Panel'](PanelExamplePanel);
           $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
         }
         
       });
     }());
   }
+
+  $('.ms-Icon--Cancel').click(function(){
+    $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+    $('.ms-Button').removeClass('closebtn');
+    $('.ms-PanelAction-close').click();
+  })
 
   var PanelExamples = document.getElementsByClassName("ms-clock");
   for (var i = 0; i < PanelExamples.length; i++) {
@@ -393,6 +471,11 @@ li button:focus{
         {
           new fabric['Panel'](PanelExamplePanel);
           $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-setting button').removeClass('closebtn');
         }
         
       });
@@ -444,7 +527,7 @@ li button:focus{
     ///date picker
     var DatePickerElements = document.querySelectorAll(".ms-DatePicker");
     for (var i = 0; i < DatePickerElements.length; i++) {
-      new fabric['DatePicker'](DatePickerElements[i]);
+      //new fabric['DatePicker'](DatePickerElements[i]);
     }
 
     ////////////////////////////////////////////////

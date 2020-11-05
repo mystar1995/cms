@@ -3,7 +3,36 @@
 @section('title')
 Alerts
 @endsection
-<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 0;"></div>
+<div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 200px;right: 5px;position: absolute;z-index: 1;">
+	<div class="top-area">
+		<div class="" style="padding: 9px; padding-left: 30px;">
+			<div class="row">
+				<div class="col-md-12" style="cursor: pointer;">
+					<!-- <div class="event" style="display: flex;">
+						<div class="top_btn" style="margin-left: 20px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--TriggerApproval" style="color: #894888;"></i>
+							<span class="recorded" style="cursor: pointer;padding-left:5px;">Triggers</span>
+						</div>
+					</div> -->
+					<div class="ms-clock">
+					    <button class="ms-Button ms-Button--indigo" style="display: flex !important;"><i class="ms-Icon ms-font-sm ms-Icon--TriggerApproval" style="color: #894888;"></i>
+							<span class="recorded" style="cursor: pointer;padding-left:5px;color: #894888;">Triggers</span></button>
+					    <div class="ms-Panel">
+					      <p class="ms-Panel-headerText" style="font-weight: bolder;margin-left: 18px;">Trigger</p>
+					      <button class="ms-Panel-closeButton ms-PanelAction-close">
+					        <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i>
+					      </button>
+					      <div class="ms-Panel-contentInner" style="padding: 0 18px 20px;">
+					       
+					      </div>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 @section('content')
 
 <section class="section">
