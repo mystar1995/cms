@@ -52,7 +52,7 @@ Views
 	<div style="width: 70px;position: absolute;right: 0; top: 0;margin-top: -6px;margin-right: 218px;color: #333; ">
 		<div class="ms-DatePicker" style="margin-top: -30px;width: 70px;">
 		  <div class="ms-TextField">
-		    <input class="ms-TextField-field" type="date" value="">
+		    <input class="ms-TextField-field" type="date" id="today_date" >
 		  </div>
 		</div>
 	</div>

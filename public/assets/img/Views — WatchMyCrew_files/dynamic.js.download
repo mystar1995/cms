@@ -1,0 +1,5 @@
+function BaseUrl(path = '') {
+    return 'http://3.236.102.16/' + path;
+}
+
+const AuthUser = false;

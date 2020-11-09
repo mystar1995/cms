@@ -1,0 +1,625 @@
+
+<!-- saved from url=(0031)http://3.236.102.16/admin.views -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> .ios-alertview-overlay{ font-family: Helvetica Neue,Helvetica,Arial,sans-serif; color: #000; font-size: 14px; line-height: 1.4; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 10600; } .ios-alertview-overlay.v-enter{ opacity: 0; } .ios-alertview-overlay.v-enter-active{ transition: opacity .4s; } .ios-alertview-overlay.v-leave-active{ opacity: 0; transition: opacity .4s; } .ios-alertview-overlay *{ -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; } .ios-alertview{ width: 270px; position: absolute; z-index: 11000; left: 50%; top: 50%; text-align: center; border-radius: 7px; transform: translate3d(-50%, -50%, 0); } .ios-alertview-overlay.v-enter .ios-alertview{ opacity: 0; transform: translate3d(-50%, -50%, 0) scale(1.185); } .ios-alertview-overlay.v-enter-active .ios-alertview{ transition: all .4s; } .ios-alertview-overlay.v-leave-active .ios-alertview{ opacity: 0; z-index: 10999; transform: translate3d(-50%, -50%, 0) scale(0.815); transition: all .4s; } .ios-alertview-inner{ padding: 15px; border-bottom: 1px solid #b5b5b5; border-top-left-radius: 7px; border-top-right-radius: 7px; background: #e8e8e8; } .ios-alertview-inner-remind{ border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; } .ios-alertview-title{ font-weight: bold; font-size: 18px; text-align: center; } .ios-alertview-title + .ios-alertview-text{ margin-top: 5px; } .ios-alertview-text-input{ outline: 0; box-sizing: border-box; height: 30px; background: #fff; margin: 0; margin-top: 15px; padding: 0 5px; border: 1px solid #a0a0a0; border-radius: 5px; width: 100%; font-size: 14px; font-family: inherit; display: block; box-shadow: 0 0 0 rgba(0, 0, 0, 0); appearance: none; } .ios-alertview-buttons{ overflow: hidden; } .ios-alertview-buttons-horizontal{ height: 44px; display: flex; justify-content: center; } .ios-alertview-button{ width: 100%; padding: 0 5px; height: 44px; font-size: 17px; line-height: 44px; text-align: center; color: #007aff; background: #e8e8e8; display: block; position: relative; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; cursor: pointer; border-bottom: 1px solid #b5b5b5; box-sizing: border-box; } .ios-alertview-button.ios-alertview-button-bold{ font-weight: bold; } .ios-alertview-button:active{ background-color: #d4d4d4; } .ios-alertview-button:last-child{ border-radius: 0 0 7px 7px; } .ios-alertview-buttons-horizontal .ios-alertview-button{ border-bottom: none; border-right: 1px solid #b5b5b5; flex: 1; } .ios-alertview-buttons-horizontal .ios-alertview-button:first-child{ /* cancel */ border-radius: 0 0 0 7px; } .ios-alertview-buttons-horizontal .ios-alertview-button:last-child{ /* OK */ border-right: none; border-radius: 0 0 7px 0; } .ios-alertview-buttons-horizontal .ios-alertview-button:first-child:last-child{ border-radius: 0 0 7px 7px; } </style></head><body><div class="navbar-top" style="height: 44px; margin-top: 50px; background-color: #f3f2f1;left: 220px;right: 5px;position: absolute;z-index: 1;">
+	<div class="top-area">
+		<div class="" style="padding: 9px; padding-left: 30px;">
+			<div class="row" style="margin-top: -1px;">
+				<div class="col-md-12" style="cursor: pointer; padding-left: 0px !important;">
+					<div class="event" style="display: flex;">
+						<div class="top_btn">
+							<i class="ms-Icon ms-font-sm ms-Icon--CalculatorAddition" style="color: #894888; font-size: 13px;"></i>
+							<span style="cursor: pointer;padding-left:5px;">New</span>
+						</div>
+						<div class="top_btn" style="margin-left: 10px;">
+							<i class="ms-Icon ms-font-sm ms-Icon--Delete" style="color: #894888;"></i>
+							<span style="cursor: pointer;padding-left:5px;">Delete</span>
+						</div>
+						<div class="top_btn time_remove" style="margin-left: 10px; display: none;">
+							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
+
+							<span class="recorded" style="cursor: pointer;padding-left:5px;">Switch to Recorded</span>
+						</div>
+						<div class="top_btn time_show" style="margin-left: 10px; display: flex;">
+							<i class="ms-Icon ms-font-sm ms-Icon--OpenInNewWindow" style="color: #894888;"></i>
+							<span class="live" style="cursor: pointer;padding-left:5px;">Switch to Live</span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+  
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Views
+ — WatchMyCrew</title>
+  <meta name="csrf-token" content="0dF0jQhtcmY78skT4NXmPfHqQH2zTN7oIgY2Onnt">
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/fabric.min.css">
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/fabric.components.min.css">
+  <link rel="stylesheet" type="text/css" href="./Views — WatchMyCrew_files/jquery.dataTables.css">
+  <link href="./Views — WatchMyCrew_files/dateline.css" rel="stylesheet">
+  <!-- CSS Libraries -->
+<style type="text/css">
+  .left-img{
+    cursor: pointer;
+    margin-top: -4px;
+    margin-right: -10px !important;
+  }
+  .ms-Icon{
+    font-size: 17px;
+  }
+  .navbar .ms-Button{
+    min-width:53px;
+    padding: 4px 5px 6px;
+  }
+  .ms-Button--indigo{
+    height: 50px;
+    background-color: #5c2d91;
+    border: 1px solid #5c2d91;
+  }
+  .ms-Button--indigo:hover{
+    height: 50px;
+    background-color: #3c1765;
+    border: 1px solid #3c1765;
+  }
+  .ms-Panel{
+    background-color: #faf9f8;
+    box-shadow:-28px 0 24px -42px rgb(0 0 0);
+  }
+.collapsible {
+  color: #333;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+
+.collapsible:after {
+  content: "\02C7";
+  font-size: 35px;
+  padding-top: 13px;
+  margin-bottom: -20px;
+  float: right;
+  margin-left: 5px;
+  color: #848b90;
+}
+li button:focus{
+  outline: unset;
+}
+.active1:after {
+ content: "\02C6";
+  color: #848b90;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0s ease-out;
+  background-color: #f1f1f1;
+}
+.content a {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  padding-left: 52px !important;
+}
+.content .active {
+  background-color: #e0ccff;
+}
+.ms-Panel {
+  box-shadow: -38px 0 6px -41px rgb(0 0 0);
+}
+.ms-Panel-closeButton .ms-Icon--Cancel{
+  margin-top: 73px;
+}
+.ms-Panel{
+  padding-top: 40px;
+}
+.user-m .ms-Button{
+  color: white;
+  height: auto;
+  min-width: auto;
+}
+.ms-Button{
+  color: white;
+}
+.user-m .ms-Button:hover{
+  color: white;
+  text-decoration:none;
+}
+.user-m .ms-Button--danger{
+  background-color: #949494;
+}
+.ms-Icon:before{
+  font-size: 15px;
+  padding-top: 2px;
+}
+.me .ms-Icon:before{
+  font-size: 10px !important;
+  padding-top: 4px;
+  margin-left: -3px;
+}
+.me .ms-Icon--GlobalNavButton:before{
+  font-size: 15px !important;
+  color: white;
+
+}
+.me .ms-Icon--AlignLeft:before{
+  font-size: 14px !important;
+  padding-top: 0px !important;
+  margin-left: -3px;
+}
+.me span{
+  color: #797777 !important;
+}
+.me1 span{
+  color: white !important;
+}
+.me1{
+  margin-bottom:5px;
+}
+.me .ms-Dropdown-items{
+  overflow-y: visible !important;
+}
+
+.role-sel, .update-sel{
+  background-color: unset !important;
+  border-radius: 0px !important;
+  height: 40px !important;
+}
+.title-label{
+  font-weight: bold;
+}
+.card-body td, .card-body th, .card-body label{
+  font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+.user-m .table-striped tbody tr:nth-of-type(odd){
+  background-color: unset;
+}
+.user-m table td,.user-m table th {
+  height: 50px !important;
+  border-top: 1px solid #b9bdbf;
+}
+.user-m table{
+  margin-bottom: 0px;
+}
+.user-m table .action{
+  text-align: right;
+  margin-right: 100px;
+}
+.user-m .card-header{
+  border-bottom-color:#ececec !important;
+}
+.ms-Icon--Cancel{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.ms-Dropdown-title{
+  border:unset !important;
+  background-color: unset;
+}
+.ms-Dropdown-select *{
+  font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+.helpful .ms-Icon--ChromeBack:before{
+  font-size: 17px;
+}
+.helpful .ms-Icon--Home:before{
+  font-size: 20px;
+}
+.top_btn:hover{
+  background-color: #e2e0dd !important;
+  cursor: pointer;
+}
+.top_btn{
+  display: flex;
+  padding-top: 2px; padding-bottom: 3px; padding-right: 7px;padding-left: 7px;
+
+}
+#dl{
+  height: 120px !important;
+}
+.d-band-1{
+  margin-bottom: -21px !important;
+}
+ .set_area img{
+    width: 54px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+
+ }
+ .set_area {
+   display: flex; width: 100%;flex-wrap:wrap;
+ }
+ .ms-Button, .ms-PanelExample{
+  background-color: unset !important;
+  border: none !important;
+ }
+@media(max-width: 1025px){
+  .main-sidebar{
+    top: 7px !important;
+    width:35px !important;
+  }
+  .navbar-top{
+    left: 30px !important;
+  }
+}
+@media(max-width: 700px){
+  .top_btn{
+    display: none;
+  }
+  .ms-env{
+    display: none;
+  }
+  .ms-envss{
+    display: none;
+  }
+}
+
+.loading
+{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-size:40% 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: white;  
+  background-image: url('http://3.236.102.16/assets/img/loading.gif');
+}
+
+.time_add
+{
+  background-color: #e2e0dd;
+}
+</style>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/style.css">
+  <link rel="stylesheet" href="./Views — WatchMyCrew_files/components.css">
+
+
+  <div id="app"><div class="main-wrapper"><div class="navbar-bg" style="position: fixed; z-index: 1100;"><div><label class="ms-Label" style="color: white; font-size: 19px; margin: 6px 4px 4px 15px;">WatchMyCrew</label></div></div> <nav class="navbar navbar-expand-lg main-navbar" style="margin-top: -10px; position: fixed; z-index: 1200;"><div class="navbar-nav navbar-right" style="margin-left: auto; margin-right: -20px;"><div class="ms-env"><i class="ms-Icon ms-Icon--AddOnlineMeeting" style="margin-top: 12px; margin-left: -31px; float: left; color: white;"></i> <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 180px; font-size: 11px; position: absolute;">Environments </span> <span class="ms-Label" style="color: rgba(255, 255, 255, 0.88); width: 160px; font-size: 17px; font-weight: 200; padding-top: 13px;">Pty Limited... <button class="ms-Button" style="background: rgb(92, 45, 145); border: rgb(92, 45, 145);"><i class="ms-Icon ms-Icon--ChevronDown" style="position: absolute; margin: -11px -9px 4px; cursor: pointer;"></i></button></span> <div class="ms-Panel" style="margin-top: 5px;"><button class="ms-Panel-closeButton ms-PanelAction-close"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i></button> <div class="ms-Panel-contentInner" style="margin-top: -6px; padding: 0px 20px 20px;"><p class="ms-Panel-headerText">Environments</p> <div class="ms-Panel-content"><div class="ms-SearchBox is-animated" style="width: 100%; margin-top: 10px;"><input type="text" value="" class="ms-SearchBox-field" style="width: 100%;"> <label class="ms-SearchBox-label"><i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i> <span class="ms-SearchBox-text">Search</span></label> <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel"><button class="ms-CommandButton-button"><span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Clear"></i></span> <span class="ms-CommandButton-label"></span></button></div></div></div></div></div></div> <div class="ms-clock"><button class="ms-Button ms-Button--indigo" style="display: flex !important;"><i class="ms-Icon ms-font-lg ms-Icon--Clock" style="color: white; padding-top: 3px; display: flex; margin: 4px;"></i><span class="mytime" style="margin-top: 10px; margin-right: 20px; color: white;">UTC</span></button> <div class="ms-Panel"><p class="ms-Panel-headerText" style="font-weight: bolder; margin-left: 18px;">UTC</p> <button class="ms-Panel-closeButton ms-PanelAction-close"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i></button> <div class="ms-Panel-contentInner" style="padding: 0px 18px 20px;"><p class="ms-Panel-headerText utc" style="font-weight: bolder; font-size: 17px; margin-top: unset; cursor: pointer;">UTC</p> <p class="ms-Panel-headerText local_time" style="font-weight: bolder; font-size: 17px; margin-top: unset; cursor: pointer;">Local Time</p> <p class="ms-Panel-headerText new_y" style="font-weight: bolder; font-size: 17px; margin-top: unset; cursor: pointer;">American/New_York</p> <div class="ms-Panel-content"></div></div></div></div> <div class="ms-setting"><button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Settings" style="color: white; padding-top: 3px;"></i></button> <div class="ms-Panel"><p class="ms-Panel-headerText" style="font-weight: bolder; margin-left: 18px;">Settings</p> <button class="ms-Panel-closeButton ms-PanelAction-close"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 2px;"></i></button> <div class="ms-Panel-contentInner" style="padding: 0px 18px 20px;"><p class="ms-Panel-headerText" style="font-weight: bolder; font-size: 17px; margin-top: unset;">Themes</p> <div class="ms-Panel-content"><div class="set_area" style="height: 115px; overflow-y: hidden;"><img value="1" src="./Views — WatchMyCrew_files/1.png" class="1"> <img src="./Views — WatchMyCrew_files/2.png" class="2"> <img src="./Views — WatchMyCrew_files/default.png" class="default"> <img src="./Views — WatchMyCrew_files/3.png" class="3"> <img src="./Views — WatchMyCrew_files/4.png" class="4"> <img src="./Views — WatchMyCrew_files/5.png" class="5"> <img src="./Views — WatchMyCrew_files/6.png" class="6"> <img src="./Views — WatchMyCrew_files/7.png" class="7"> <img src="./Views — WatchMyCrew_files/8.png" class="8"> <img src="./Views — WatchMyCrew_files/9.png" class="9"> <img src="./Views — WatchMyCrew_files/10.png" class="10"> <img src="./Views — WatchMyCrew_files/11.png" class="11"> <img src="./Views — WatchMyCrew_files/22.png" class="22"> <img src="./Views — WatchMyCrew_files/33.png" class="33"> <img src="./Views — WatchMyCrew_files/44.png" class="44"> <img src="./Views — WatchMyCrew_files/55.png" class="55"> <img src="./Views — WatchMyCrew_files/66.png" class="66"> <img src="./Views — WatchMyCrew_files/77.png" class="1"> <img src="./Views — WatchMyCrew_files/88.png" class="2"> <img src="./Views — WatchMyCrew_files/99.png" class="3"> <img src="./Views — WatchMyCrew_files/00.png" class="4"> <img src="./Views — WatchMyCrew_files/111.png" class="5"> <img src="./Views — WatchMyCrew_files/222.png" class="6"> <img src="./Views — WatchMyCrew_files/333.png" class="7"> <img src="./Views — WatchMyCrew_files/444.png" class="8"> <img src="./Views — WatchMyCrew_files/555.png" class="9"> <img src="./Views — WatchMyCrew_files/666.png" class="10"> <img src="./Views — WatchMyCrew_files/777.png" class="11"> <img src="./Views — WatchMyCrew_files/888.png" class="22"> <img src="./Views — WatchMyCrew_files/000.png" class="44"> <img src="./Views — WatchMyCrew_files/1111.png" class="55"> <img src="./Views — WatchMyCrew_files/2222.png" class="66"> <img src="./Views — WatchMyCrew_files/3333.png" class="1"> <img src="./Views — WatchMyCrew_files/4444.png" class="2"> <img src="./Views — WatchMyCrew_files/5555.png" class="3"> <img src="./Views — WatchMyCrew_files/6666.png" class="4"> <img src="./Views — WatchMyCrew_files/7777.png" class="5"> <img src="./Views — WatchMyCrew_files/8888.png" class="6"> <img src="./Views — WatchMyCrew_files/9999.png" class="7"> <img src="./Views — WatchMyCrew_files/0000.png" class="8"></div></div><br> <span class="ms-Panel-headerText hideset" style="font-size: 17px; cursor: pointer; display: none; margin: unset;">Hide all</span> <span class="ms-Panel-headerText view" style="font-size: 17px; cursor: pointer; margin: unset;">view all</span></div></div></div> <div class="ms-help"><button class="ms-Button ms-Button--indigo"><i class="ms-Icon ms-font-lg ms-Icon--Help" style="color: white; padding-top: 2px;"></i></button> <div class="ms-Panel"><button class="ms-Panel-closeButton ms-PanelAction-close"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel" style="padding-top: 3px;"></i></button> <div class="ms-Panel-contentInner helpful" style="margin-top: 70px; padding: 0px 20px 20px;"><div style="display: flex;"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--ChromeBack" style="padding-top: 8px; cursor: pointer; color: rgb(167, 167, 167);"></i> <a href="http://3.236.102.16/admin.dashboard"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Home" style="padding-top: 4px; padding-left: 5px; padding-right: 10px; cursor: pointer; color: rgb(167, 167, 167);"></i></a> <div class="ms-SearchBox is-animated" style="width: 100%;"><input type="text" value="" class="ms-SearchBox-field" style="width: 100%;"> <label class="ms-SearchBox-label"><i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i> <span class="ms-SearchBox-text">Search help</span></label> <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel"><button class="ms-CommandButton-button"><span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Clear"></i></span> <span class="ms-CommandButton-label"></span></button></div></div></div> <div class="card" style="padding: 20px 15px 15px; margin-top: 10px;"><h4 class="ms-Label" style="font-size: 14px; font-weight: bold;">Sign your messages with style</h4> <p class="ms-Label" style="font-size: 14px;">Lorem ipsum is so ubiquitous because it is so versatile. Select how many paragraphs you want, copy, paste, and break the lines wherever it is convenient. Real copy doesn't work that way.</p> <label class="ms-Label" style="font-size: 14px; color: rgb(0, 120, 212); cursor: pointer;">Learn more</label></div> <div class="card" style="padding: 20px 15px 15px; margin-top: -10px;"><h4 class="ms-Label" style="font-size: 14px; font-weight: bold;">Let them know you're away</h4> <p class="ms-Label" style="font-size: 14px;">Lorem ipsum is so ubiquitous because it is so versatile. Select how many paragraphs you want, copy, paste, and break the lines wherever it is convenient. Real copy doesn't work that way.</p> <label class="ms-Label" style="font-size: 14px; color: rgb(0, 120, 212); cursor: pointer;">Learn more</label></div></div></div></div> <div class="dropdown" style="width: 100%;"><div class="ms-PanelExample"><button class="ms-Button" style="background-color: rgb(92, 45, 145); border: 1px solid rgb(92, 45, 145);"><div class="ms-Persona-imageArea" style="max-width: 32px; height: 32px; position: unset; margin-top: 3px; margin-left: 3px;"><div class="ms-Persona-initials ms-Persona-initials--purple" style="line-height: 32px; background-color: rgb(0, 120, 212); font-size: 16px; font-weight: 300 !important;">ML</div></div></button> <div class="ms-Panel"><button class="ms-Panel-closeButton ms-PanelAction-close"><i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel"></i></button> <div class="ms-Panel-contentInner"><p class="ms-Panel-headerText" style="margin-top: 0px; font-weight: bolder;">My account</p> <div class="ms-Panel-content" style="margin-top: 20px;"><div class="ms-Persona ms-Persona--xl"><div class="ms-Persona-imageArea"><div class="ms-Persona-initials ms-Persona-initials--blue">ML</div></div> <div class="ms-Persona-presence"><i class="ms-Persona-presenceIcon ms-Icon ms-Icon--SkypeCheck"></i></div> <div class="ms-Persona-details"><div class="ms-Persona-primaryText" style="font-size: 17px; font-weight: bolder;">Mlton Lafferty</div> <div class="ms-Persona-optionalText" style="font-weight: bolder;">milton@yac.com</div> <div class="ms-Persona-secondaryText"><a href="http://3.236.102.16/admin.views#" style="color: rgb(0, 101, 178); font-weight: bolder;"> My profile</a></div> <div class="ms-Persona-tertiaryText"><a href="http://3.236.102.16/admin.views#" style="color: rgb(0, 101, 178); font-weight: bolder;">My account</a></div> <div class="ms-Persona-optionalText"><a href="http://3.236.102.16/logout" style="color: rgb(0, 101, 178); font-weight: bolder;">Sign out</a></div></div></div></div></div></div></div></div></div></nav> <div class="main-sidebar" tabindex="1" style="overflow: hidden; outline: none;"><aside id="sidebar-wrapper"><ul class="sidebar-menu"><ul class="navbar-nav mr-3" style="width: 100%;"><li><a href="http://3.236.102.16/admin.views#" data-toggle="sidebar" class="collapsible-menu"><i class="ms-Icon ms-font-lg ms-Icon--CollapseMenu" style="margin-left: -3px;"></i></a></li></ul> <li><a href="http://3.236.102.16/admin.dashboard" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--Home"></i> <span class="ms-Label" style="font-size: 14px;">Dashboard</span></a></li> <li class=" active"><a href="http://3.236.102.16/admin.views" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--Speakers"></i> <span class="ms-Label" style="font-size: 14px;">Views</span></a></li> <li><a href="http://3.236.102.16/admin.crew" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--Boards"></i><span class="ms-Label" style="font-size: 14px;">Crew Members</span></a></li> <li><a href="http://3.236.102.16/admin.alert" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--AddEvent"></i> <span class="ms-Label" style="font-size: 14px;">Alerts</span></a></li> <li><a href="http://3.236.102.16/admin.activite" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--Help"></i><span class="ms-Label" style="font-size: 14px;">Activities</span></a></li> <li><a href="http://3.236.102.16/admin.worktime" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--Warning"></i><span class="ms-Label" style="font-size: 14px;">Worktime</span></a></li> <li><a href="http://3.236.102.16/admin.reports" class="nav-link"><i class="ms-Icon ms-font-lg ms-Icon--DynamicSMBLogo"></i><span class="ms-Label" style="font-size: 14px;">Reports</span></a></li></ul></aside></div> <div class="main-content" style="min-height: 861px;"><section class="section"><div class="section-header"><div style="width: 70px; position: absolute; right: 0px; top: 0px; margin-top: -31px; margin-right: 18px; color: rgb(51, 51, 51);"><i class="ms-Icon ms-font-sm ms-Icon--AlignLeft" style="color: rgb(137, 72, 136); font-size: 13px;"></i></div> <div tabindex="0" class="ms-Dropdown me col-md-10" style="width: 70px; position: absolute; right: 0px; top: 0px; margin-top: -36px; margin-right: 10px; color: rgb(51, 51, 51);"><i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i> <select class="ms-Dropdown-select" style="margin-top: -10px;"><option>
+			1x1
+	    </option> <option> 2x2 </option> <option> 4x4 </option></select><span class="ms-Dropdown-title">1x1</span><ul class="ms-Dropdown-items"><li class="ms-Dropdown-item">1x1</li><li class="ms-Dropdown-item">2x2</li><li class="ms-Dropdown-item">4x4</li></ul><span class="ms-Dropdown-truncator ms-Dropdown-title">1x1</span></div> <div style="width: 70px; position: absolute; right: 0px; top: 0px; margin-top: -6px; margin-right: 218px; color: rgb(51, 51, 51);"><div class="ms-DatePicker" style="margin-top: -30px; width: 70px;"><div class="ms-TextField"><input type="date" value="" class="ms-TextField-field"></div></div></div> <div class="row animation" style="display: flex;"><div class="col-md-6"><div style="display: flex;"><div class="ms-OrgChart" style="margin-left: 40%;"><div class="ms-OrgChart-group"><ul class="ms-OrgChart-list"><li class="ms-OrgChart-listItem"><button tabindex="1" class="ms-OrgChart-listItemBtn"><div class="ms-Persona"><div class="ms-Persona-imageArea"><div class="ms-Persona-initials ms-Persona-initials--blue">RM</div> <img src="./Views — WatchMyCrew_files/2(1).png" class="ms-Persona-image"></div> <div class="ms-Persona-presence"></div> <div class="ms-Persona-details"><div class="ms-Persona-primaryText">Graz</div> <div class="ms-Persona-secondaryText">Sales</div></div></div></button></li></ul></div></div></div> <div style="position: absolute;"><div class="loading" style="display: none;"></div> <img src="./Views — WatchMyCrew_files/11(1).png" style="width: 100%;"></div></div> <div class="col-md-6"><div style="display: flex;"><div class="ms-OrgChart" style="margin-left: 40%;"><div class="ms-OrgChart-group"><ul class="ms-OrgChart-list"><li class="ms-OrgChart-listItem"><button tabindex="1" class="ms-OrgChart-listItemBtn"><div class="ms-Persona"><div class="ms-Persona-imageArea"><div class="ms-Persona-initials ms-Persona-initials--blue">RM</div> <img src="./Views — WatchMyCrew_files/1(1).png" class="ms-Persona-image"></div> <div class="ms-Persona-presence"></div> <div class="ms-Persona-details"><div class="ms-Persona-primaryText">Darv</div> <div class="ms-Persona-secondaryText">Sales</div></div></div></button></li></ul></div></div></div> <div style="position: relative;"><div class="loading" style="display: none;"></div> <img src="./Views — WatchMyCrew_files/22(1).png" style="width: 100%;"></div></div> <div class="col-md-6"><div style="display: flex;"><div class="ms-OrgChart" style="margin-left: 40%;"><div class="ms-OrgChart-group"><ul class="ms-OrgChart-list"><li class="ms-OrgChart-listItem"><button tabindex="1" class="ms-OrgChart-listItemBtn"><div class="ms-Persona"><div class="ms-Persona-imageArea"><div class="ms-Persona-initials ms-Persona-initials--blue">RM</div> <img src="./Views — WatchMyCrew_files/3(1).png" class="ms-Persona-image"></div> <div class="ms-Persona-presence"></div> <div class="ms-Persona-details"><div class="ms-Persona-primaryText">Vint</div> <div class="ms-Persona-secondaryText">Sales</div></div></div></button></li></ul></div></div></div> <div style="position: relative;"><div class="loading" style="display: none;"></div> <img src="./Views — WatchMyCrew_files/33(1).png" style="width: 100%;"></div></div> <div class="col-md-6"><div style="display: flex;"><div class="ms-OrgChart" style="margin-left: 40%;"><div class="ms-OrgChart-group"><ul class="ms-OrgChart-list"><li class="ms-OrgChart-listItem"><button tabindex="1" class="ms-OrgChart-listItemBtn"><div class="ms-Persona"><div class="ms-Persona-imageArea"><div class="ms-Persona-initials ms-Persona-initials--blue">RM</div> <img src="./Views — WatchMyCrew_files/persona.person.png" class="ms-Persona-image"></div> <div class="ms-Persona-presence"></div> <div class="ms-Persona-details"><div class="ms-Persona-primaryText">lujang</div> <div class="ms-Persona-secondaryText">Sales</div></div></div></button></li></ul></div></div></div> <div style="position: relative;"><div class="loading" style="display: none;"></div> <img src="./Views — WatchMyCrew_files/44(1).png" style="width: 100%;"></div></div></div></div></section> <div id="dl" class="d-dateline" tabindex="0" style="height: 320px; display: none;"><div class="d-inner"><div class="d-band d-band-0 d-scale-2" tabindex="0" style="height: 50%;"><div class="d-rangeBox d-before"></div><div class="d-rangeBox d-after"></div><div class="d-content" style="width: 4640px; left: -1856px;"><div class="d-markers"><div class="d-marker" style="left: 24px;">38</div><div class="d-marker" style="left: 52px;">39</div><div class="d-marker" style="left: 80px;">40</div><div class="d-marker" style="left: 108px;">41</div><div class="d-marker" style="left: 136px;">42</div><div class="d-marker" style="left: 164px;">43</div><div class="d-marker" style="left: 192px;">44</div><div class="d-marker" style="left: 220px;">45</div><div class="d-marker" style="left: 248px;">46</div><div class="d-marker" style="left: 276px;">47</div><div class="d-marker" style="left: 304px;">48</div><div class="d-marker" style="left: 332px;">49</div><div class="d-marker" style="left: 360px;">50</div><div class="d-marker" style="left: 388px;">51</div><div class="d-marker" style="left: 416px;">52</div><div class="d-marker" style="left: 444px;">53</div><div class="d-marker" style="left: 472px;">54</div><div class="d-marker" style="left: 500px;">55</div><div class="d-marker" style="left: 528px;">56</div><div class="d-marker" style="left: 556px;">57</div><div class="d-marker" style="left: 584px;">58</div><div class="d-marker" style="left: 612px;">59</div><div class="d-marker d-plus" style="left: 640px;">7</div><div class="d-marker" style="left: 668px;">1</div><div class="d-marker" style="left: 696px;">2</div><div class="d-marker" style="left: 724px;">3</div><div class="d-marker" style="left: 752px;">4</div><div class="d-marker" style="left: 780px;">5</div><div class="d-marker" style="left: 808px;">6</div><div class="d-marker" style="left: 836px;">7</div><div class="d-marker" style="left: 864px;">8</div><div class="d-marker" style="left: 892px;">9</div><div class="d-marker" style="left: 920px;">10</div><div class="d-marker" style="left: 948px;">11</div><div class="d-marker" style="left: 976px;">12</div><div class="d-marker" style="left: 1004px;">13</div><div class="d-marker" style="left: 1032px;">14</div><div class="d-marker" style="left: 1060px;">15</div><div class="d-marker" style="left: 1088px;">16</div><div class="d-marker" style="left: 1116px;">17</div><div class="d-marker" style="left: 1144px;">18</div><div class="d-marker" style="left: 1172px;">19</div><div class="d-marker" style="left: 1200px;">20</div><div class="d-marker" style="left: 1228px;">21</div><div class="d-marker" style="left: 1256px;">22</div><div class="d-marker" style="left: 1284px;">23</div><div class="d-marker" style="left: 1312px;">24</div><div class="d-marker" style="left: 1340px;">25</div><div class="d-marker" style="left: 1368px;">26</div><div class="d-marker" style="left: 1396px;">27</div><div class="d-marker" style="left: 1424px;">28</div><div class="d-marker" style="left: 1452px;">29</div><div class="d-marker" style="left: 1480px;">30</div><div class="d-marker" style="left: 1508px;">31</div><div class="d-marker" style="left: 1536px;">32</div><div class="d-marker" style="left: 1564px;">33</div><div class="d-marker" style="left: 1592px;">34</div><div class="d-marker" style="left: 1620px;">35</div><div class="d-marker" style="left: 1648px;">36</div><div class="d-marker" style="left: 1676px;">37</div><div class="d-marker" style="left: 1704px;">38</div><div class="d-marker" style="left: 1732px;">39</div><div class="d-marker" style="left: 1760px;">40</div><div class="d-marker" style="left: 1788px;">41</div><div class="d-marker" style="left: 1816px;">42</div><div class="d-marker" style="left: 1844px;">43</div><div class="d-marker" style="left: 1872px;">44</div><div class="d-marker" style="left: 1900px;">45</div><div class="d-marker" style="left: 1928px;">46</div><div class="d-marker" style="left: 1956px;">47</div><div class="d-marker" style="left: 1984px;">48</div><div class="d-marker" style="left: 2012px;">49</div><div class="d-marker" style="left: 2040px;">50</div><div class="d-marker" style="left: 2068px;">51</div><div class="d-marker" style="left: 2096px;">52</div><div class="d-marker" style="left: 2124px;">53</div><div class="d-marker" style="left: 2152px;">54</div><div class="d-marker" style="left: 2180px;">55</div><div class="d-marker" style="left: 2208px;">56</div><div class="d-marker" style="left: 2236px;">57</div><div class="d-marker" style="left: 2264px;">58</div><div class="d-marker" style="left: 2292px;">59</div><div class="d-marker d-plus" style="left: 2320px;">8</div><div class="d-marker" style="left: 2348px;">1</div><div class="d-marker" style="left: 2376px;">2</div><div class="d-marker" style="left: 2404px;">3</div><div class="d-marker" style="left: 2432px;">4</div><div class="d-marker" style="left: 2460px;">5</div><div class="d-marker" style="left: 2488px;">6</div><div class="d-marker" style="left: 2516px;">7</div><div class="d-marker" style="left: 2544px;">8</div><div class="d-marker" style="left: 2572px;">9</div><div class="d-marker" style="left: 2600px;">10</div><div class="d-marker" style="left: 2628px;">11</div><div class="d-marker" style="left: 2656px;">12</div><div class="d-marker" style="left: 2684px;">13</div><div class="d-marker" style="left: 2712px;">14</div><div class="d-marker" style="left: 2740px;">15</div><div class="d-marker" style="left: 2768px;">16</div><div class="d-marker" style="left: 2796px;">17</div><div class="d-marker" style="left: 2824px;">18</div><div class="d-marker" style="left: 2852px;">19</div><div class="d-marker" style="left: 2880px;">20</div><div class="d-marker" style="left: 2908px;">21</div><div class="d-marker" style="left: 2936px;">22</div><div class="d-marker" style="left: 2964px;">23</div><div class="d-marker" style="left: 2992px;">24</div><div class="d-marker" style="left: 3020px;">25</div><div class="d-marker" style="left: 3048px;">26</div><div class="d-marker" style="left: 3076px;">27</div><div class="d-marker" style="left: 3104px;">28</div><div class="d-marker" style="left: 3132px;">29</div><div class="d-marker" style="left: 3160px;">30</div><div class="d-marker" style="left: 3188px;">31</div><div class="d-marker" style="left: 3216px;">32</div><div class="d-marker" style="left: 3244px;">33</div><div class="d-marker" style="left: 3272px;">34</div><div class="d-marker" style="left: 3300px;">35</div><div class="d-marker" style="left: 3328px;">36</div><div class="d-marker" style="left: 3356px;">37</div><div class="d-marker" style="left: 3384px;">38</div><div class="d-marker" style="left: 3412px;">39</div><div class="d-marker" style="left: 3440px;">40</div><div class="d-marker" style="left: 3468px;">41</div><div class="d-marker" style="left: 3496px;">42</div><div class="d-marker" style="left: 3524px;">43</div><div class="d-marker" style="left: 3552px;">44</div><div class="d-marker" style="left: 3580px;">45</div><div class="d-marker" style="left: 3608px;">46</div><div class="d-marker" style="left: 3636px;">47</div><div class="d-marker" style="left: 3664px;">48</div><div class="d-marker" style="left: 3692px;">49</div><div class="d-marker" style="left: 3720px;">50</div><div class="d-marker" style="left: 3748px;">51</div><div class="d-marker" style="left: 3776px;">52</div><div class="d-marker" style="left: 3804px;">53</div><div class="d-marker" style="left: 3832px;">54</div><div class="d-marker" style="left: 3860px;">55</div><div class="d-marker" style="left: 3888px;">56</div><div class="d-marker" style="left: 3916px;">57</div><div class="d-marker" style="left: 3944px;">58</div><div class="d-marker" style="left: 3972px;">59</div><div class="d-marker d-plus" style="left: 4000px;">9</div><div class="d-marker" style="left: 4028px;">1</div><div class="d-marker" style="left: 4056px;">2</div><div class="d-marker" style="left: 4084px;">3</div><div class="d-marker" style="left: 4112px;">4</div><div class="d-marker" style="left: 4140px;">5</div><div class="d-marker" style="left: 4168px;">6</div><div class="d-marker" style="left: 4196px;">7</div><div class="d-marker" style="left: 4224px;">8</div><div class="d-marker" style="left: 4252px;">9</div><div class="d-marker" style="left: 4280px;">10</div><div class="d-marker" style="left: 4308px;">11</div><div class="d-marker" style="left: 4336px;">12</div><div class="d-marker" style="left: 4364px;">13</div><div class="d-marker" style="left: 4392px;">14</div><div class="d-marker" style="left: 4420px;">15</div><div class="d-marker" style="left: 4448px;">16</div><div class="d-marker" style="left: 4476px;">17</div><div class="d-marker" style="left: 4504px;">18</div><div class="d-marker" style="left: 4532px;">19</div><div class="d-marker" style="left: 4560px;">20</div><div class="d-marker" style="left: 4588px;">21</div><div class="d-marker" style="left: 4616px;">22</div></div><div class="d-events"></div><div class="d-limit d-end" style="left: 2320px;"></div></div><div class="d-indicator d-left d-hidden"></div><div class="d-indicator d-right d-hidden"></div></div><div class="d-band d-band-1 d-scale-3" tabindex="0" style="height: 24%;"><div class="d-rangeBox d-before" style="width: 19.333px;"></div><div class="d-rangeBox d-after" style="width: 19.333px;"></div><div class="d-content" style="width: 4640px; left: -1856px;"><div class="d-markers"><div class="d-marker" style="left: 10px;">23</div><div class="d-marker d-plus" style="left: 80px;">1</div><div class="d-marker" style="left: 150px;">1</div><div class="d-marker" style="left: 220px;">2</div><div class="d-marker" style="left: 290px;">3</div><div class="d-marker" style="left: 360px;">4</div><div class="d-marker" style="left: 430px;">5</div><div class="d-marker" style="left: 500px;">6</div><div class="d-marker" style="left: 570px;">7</div><div class="d-marker" style="left: 640px;">8</div><div class="d-marker" style="left: 710px;">9</div><div class="d-marker" style="left: 780px;">10</div><div class="d-marker" style="left: 850px;">11</div><div class="d-marker" style="left: 920px;">12</div><div class="d-marker" style="left: 990px;">13</div><div class="d-marker" style="left: 1060px;">14</div><div class="d-marker" style="left: 1130px;">15</div><div class="d-marker" style="left: 1200px;">16</div><div class="d-marker" style="left: 1270px;">17</div><div class="d-marker" style="left: 1340px;">18</div><div class="d-marker" style="left: 1410px;">19</div><div class="d-marker" style="left: 1480px;">20</div><div class="d-marker" style="left: 1550px;">21</div><div class="d-marker" style="left: 1620px;">22</div><div class="d-marker" style="left: 1690px;">23</div><div class="d-marker d-plus" style="left: 1760px;">2</div><div class="d-marker" style="left: 1830px;">1</div><div class="d-marker" style="left: 1900px;">2</div><div class="d-marker" style="left: 1970px;">3</div><div class="d-marker" style="left: 2040px;">4</div><div class="d-marker" style="left: 2110px;">5</div><div class="d-marker" style="left: 2180px;">6</div><div class="d-marker" style="left: 2250px;">7</div><div class="d-marker" style="left: 2320px;">8</div><div class="d-marker" style="left: 2390px;">9</div><div class="d-marker" style="left: 2460px;">10</div><div class="d-marker" style="left: 2530px;">11</div><div class="d-marker" style="left: 2600px;">12</div><div class="d-marker" style="left: 2670px;">13</div><div class="d-marker" style="left: 2740px;">14</div><div class="d-marker" style="left: 2810px;">15</div><div class="d-marker" style="left: 2880px;">16</div><div class="d-marker" style="left: 2950px;">17</div><div class="d-marker" style="left: 3020px;">18</div><div class="d-marker" style="left: 3090px;">19</div><div class="d-marker" style="left: 3160px;">20</div><div class="d-marker" style="left: 3230px;">21</div><div class="d-marker" style="left: 3300px;">22</div><div class="d-marker" style="left: 3370px;">23</div><div class="d-marker d-plus" style="left: 3440px;">3</div><div class="d-marker" style="left: 3510px;">1</div><div class="d-marker" style="left: 3580px;">2</div><div class="d-marker" style="left: 3650px;">3</div><div class="d-marker" style="left: 3720px;">4</div><div class="d-marker" style="left: 3790px;">5</div><div class="d-marker" style="left: 3860px;">6</div><div class="d-marker" style="left: 3930px;">7</div><div class="d-marker" style="left: 4000px;">8</div><div class="d-marker" style="left: 4070px;">9</div><div class="d-marker" style="left: 4140px;">10</div><div class="d-marker" style="left: 4210px;">11</div><div class="d-marker" style="left: 4280px;">12</div><div class="d-marker" style="left: 4350px;">13</div><div class="d-marker" style="left: 4420px;">14</div><div class="d-marker" style="left: 4490px;">15</div><div class="d-marker" style="left: 4560px;">16</div><div class="d-marker" style="left: 4630px;">17</div></div><div class="d-events"></div><div class="d-limit d-begin" style="right: 4000px;"></div><div class="d-limit d-end" style="left: 2320px;"></div></div><div class="d-indicator d-left d-hidden"></div><div class="d-indicator d-right d-hidden"></div></div></div><div class="d-bubble d-hidden"><div class="d-close">×</div><div class="d-info">Bubble</div></div></div></div> <footer class="main-footer"><div class="footer-left"></div> <div class="footer-right"></div></footer></div></div>
+
+  <script src="./Views — WatchMyCrew_files/dynamic.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/app.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/jquery.nicescroll.min.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/moment.min.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/stisla.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/scripts.js.download"></script>  
+  <script src="./Views — WatchMyCrew_files/fabric.min.js.download"></script>
+  <script src="./Views — WatchMyCrew_files/dateline.js.download"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script> -->
+  <script src="./Views — WatchMyCrew_files/jquery.dataTables.min.js.download"></script>
+  
+
+
+<script>
+        var q_dl = dateline('dl', {
+        begin: "2020-01-01",
+        end: "2020-01-02",
+        cursor: "2020-01-01",
+        bands:[
+            {size: "50%", scale: Dateline.MINUTE, interval: 28},
+            {size: "24%", layout: "overview", scale: Dateline.HOUR, interval: 70}
+        ],
+        events:[
+           // {id: 2, start: "2020-01-01", text: "YII project started", description: "...", class: "..."},
+            /* ... many more events ... */
+        ]
+    })
+</script>
+<script type="text/javascript">
+  window.onload = function(){
+    $('.loading').hide();
+  }
+  $(document).ready(function(){
+    // $('.time_remove').click(function(){
+    //   if($(this).hasClass('time_add'))
+    //   {
+    //     $('.d-dateline').show();
+    //     $(this).removeClass('time_add');  
+    //   }
+    //   else
+    //   {
+    //     $('.d-dateline').hide();
+    //     $(this).addClass('time_add');
+    //   }
+    // })  
+    $('.time_remove').click(function(){
+      $(this).css('display','none');
+      $('.time_show').css('display', 'flex');
+      $('.animation').css('display', 'flex');
+      $('.d-dateline').hide();
+    })
+    $('.time_show').click(function(){
+      $(this).css('display','none');
+      $('.time_remove').css('display', 'flex');
+      $('.animation').css('display', 'none');
+      $('.d-dateline').show();
+    })
+  })
+  
+
+
+
+  $("#example").dataTable();
+  /////////////////////Panel///////////////////
+    var PanelExamples = document.getElementsByClassName("ms-PanelExample");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
+        }
+        
+      });
+    }());
+  }
+  var PanelExamples = document.getElementsByClassName("ms-help");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
+        }
+        
+      });
+    }());
+  }
+  var PanelExamples = document.getElementsByClassName("ms-env");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-Icon--ChevronDown').attr('style', 'transform:rotate(0deg)');
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          $('.ms-Icon--ChevronDown').attr('style', 'transform:rotate(-180deg)');
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-setting button').removeClass('closebtn');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
+        }
+        
+      });
+    }());
+  }
+  var PanelExamples = document.getElementsByClassName("ms-setting");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-clock button').removeClass('closebtn');
+        }
+        
+      });
+    }());
+  }
+
+  $('.ms-Icon--Cancel').click(function(){
+    $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+    $('.ms-Button').removeClass('closebtn');
+    $('.ms-PanelAction-close').click();
+  })
+
+  var PanelExamples = document.getElementsByClassName("ms-clock");
+  for (var i = 0; i < PanelExamples.length; i++) {
+    (function() {
+      var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+      var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+      PanelExampleButton.addEventListener("click", function(i) {
+        if($(this).hasClass('closebtn'))
+        {
+          $('.ms-PanelAction-close').click();
+          $(this).removeClass('closebtn');
+        }
+        else
+        {
+          new fabric['Panel'](PanelExamplePanel);
+          $(this).addClass('closebtn');  
+          $('.ms-Icon--ChevronDown').css('transform','rotate(0deg)');
+          $('.ms-help button').removeClass('closebtn');
+          $('.ms-env button').removeClass('closebtn');
+          $('.ms-PanelExample button').removeClass('closebtn');
+          $('.ms-setting button').removeClass('closebtn');
+        }
+        
+      });
+    }());
+  }
+
+  // var PanelExamples = document.getElementsByClassName("ms-option");
+  // for (var i = 0; i < PanelExamples.length; i++) {
+  //   (function() {
+  //     var PanelExampleButton = PanelExamples[i].querySelector(".ms-Button");
+  //     var PanelExamplePanel = PanelExamples[i].querySelector(".ms-Panel");
+  //     PanelExampleButton.addEventListener("click", function(i) {
+  //       new fabric['Panel'](PanelExamplePanel);
+  //     });
+  //   }());
+  // }
+
+  /////////////////////side bar menu///////////////////
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active1");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  /////////////////////search///////////////////////////////////
+   var SearchBoxElements = document.querySelectorAll(".ms-SearchBox");
+  for (var i = 0; i < SearchBoxElements.length; i++) {
+    new fabric['SearchBox'](SearchBoxElements[i]);
+  }
+  /////////////////////scroll//////////////////////////////////
+  /////////////////////select box///////////////////////////
+    var DropdownHTMLElements = document.querySelectorAll('.ms-Dropdown');
+    for (var i = 0; i < DropdownHTMLElements.length; ++i) {
+      var Dropdown = new fabric['Dropdown'](DropdownHTMLElements[i]);
+    }
+    //table
+    var TableElements = document.querySelectorAll(".ms-Table");
+    for (var i = 0; i < TableElements.length; i++) {
+      new fabric['Table'](TableElements[i]);
+    }
+    ///date picker
+    var DatePickerElements = document.querySelectorAll(".ms-DatePicker");
+    for (var i = 0; i < DatePickerElements.length; i++) {
+      //new fabric['DatePicker'](DatePickerElements[i]);
+    }
+
+    ////////////////////////////////////////////////
+
+    $('.set_area img').click(function(){
+      $('img').css('border', 'none');
+      $('img').css('padding','0px');
+      $(this).css('border','2px solid #1b1b1b94');
+      $(this).css('padding','2px');
+      
+    })
+     $('.view').click(function(){
+      $('.set_area').css('height','auto');
+      $(this).css('display','none');
+      $('.hideset').css('display','block');
+    })
+    $('.hideset').click(function(){
+      $(this).css('display','none');
+      $('.view').css('display','block');
+      $('.set_area').css('height','115px');
+    })
+
+    $('.set_area .1').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/55.jpg)');
+    })
+    $('.set_area .2').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/44.jpg)');
+    })
+    $('.set_area .3').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/1.jpg)');
+    })
+    $('.set_area .4').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/4.jpg)');
+    })
+    $('.set_area .5').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/5.jpg)');
+    })
+    $('.set_area .6').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/6.jpg)');
+    })
+    $('.set_area .7').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/7.jpg)');
+    })
+    $('.set_area .default').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/default.jpg)');
+    })
+    $('.set_area .8').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/8.jpg)');
+    })
+    $('.set_area .9').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/9.jpg)');
+    })
+    $('.set_area .10').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/10.jpg)');
+    })
+    $('.set_area .11').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/11.jpg)');
+    })
+    $('.set_area .22').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/22.jpg)');
+    })
+    $('.set_area .33').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/33.jpg)');
+    })
+    $('.set_area .44').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/44.jpg)');
+    })
+    $('.set_area .55').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/55.jpg)');
+    })
+    $('.set_area .66').click(function(){
+        $('.navbar-bg').css('background-image','url(http://3.236.102.16/assets/img/theme/top/66.jpg)');
+    })
+    $('.utc').click(function(){
+      $('.mytime').html('UTC');
+    })
+    $('.local_time').click(function(){
+      $('.mytime').html('Local&nbsp&nbspTime');
+    })
+    $('.new_y').click(function(){
+      $('.mytime').html('American/New_York');
+    })
+</script><div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 8px; z-index: 892; cursor: default; position: fixed; top: 50px; left: 212px; height: 952px; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 6px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 8px; z-index: 892; top: 994px; left: 0px; position: fixed; cursor: default; display: none; opacity: 0;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 6px; width: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;"></div></div></body></html>

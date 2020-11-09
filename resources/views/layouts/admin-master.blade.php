@@ -297,6 +297,9 @@ li button:focus{
 </body>
 </html>
 
+you didn't share the whole idea for this system yet because you asked me about static pages only.
+
+by the way, can you share me the idea of WMC or example site similar with this..
 <script>
         var q_dl = dateline('dl', {
         begin: "2020-01-01",
@@ -341,6 +344,12 @@ li button:focus{
       $('.animation').css('display', 'none');
       $('.d-dateline').show();
     })
+    Date.prototype.toDateInputValue = (function() {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0,10);
+    });
+    $('#today_date').val(new Date().toDateInputValue());
   })
   
 
